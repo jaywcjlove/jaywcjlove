@@ -1,3 +1,5 @@
+[Weibo](http://weibo.com/pc175) | [Twitter](https://twitter.com/jaywcjlove) | [E-Mail](mailto:wowohoo@qq.com)
+
 <div align="center">
   <br>
   <br>
