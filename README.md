@@ -7,13 +7,13 @@
   <br>
   <p>
     <a href="http://weibo.com/pc175">
-      <img width="18" height="18" src="./imgs/weibo.svg" />
+      <img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/weibo.svg?sanitize=true" />
     </a>
     <a href="https://twitter.com/jaywcjlove">
-      <img width="18" height="18" src="./imgs/twitter.svg" />
+      <img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/twitter.svg?sanitize=true" />
     </a>
     <a href="mailto:wowohoo@qq.com">
-      <img width="18" height="18" src="./imgs/mail.svg" />
+      <img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/mail.svg?sanitize=true" />
     </a>
   </p>
   <br>
