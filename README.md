@@ -40,6 +40,12 @@
   <a href="https://github.com/uiwjs/province-city-china">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=province-city-china" />
   </a>
+  <a href="https://github.com/uiwjs/react-baidu-map">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-baidu-map" />
+  </a>
+  <a href="https://github.com/uiwjs/react-md-editor">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-md-editor" />
+  </a>
   <a href="https://github.com/jaywcjlove/docs">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=docs" />
   </a>
