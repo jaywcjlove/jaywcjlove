@@ -22,6 +22,7 @@
   </p>
   <br>
   <br>
+  <p>Hi, I'm Kenny, a frontEnd web developer from China.</p>
   <br>
   <br>
   <br>
