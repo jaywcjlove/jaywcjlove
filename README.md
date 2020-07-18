@@ -34,6 +34,12 @@
   <a href="https://github.com/jaywcjlove/tsbb">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=tsbb" />
   </a>
+  <a href="https://github.com/uiwjs/react-native-alipay">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-native-alipay" />
+  </a>
+  <a href="https://github.com/uiwjs/province-city-china">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=province-city-china" />
+  </a>
   <a href="https://github.com/jaywcjlove/docs">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=docs" />
   </a>
