@@ -40,6 +40,18 @@
   <a href="https://github.com/jaywcjlove/dev-site">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=dev-site" />
   </a>
+  <a href="https://github.com/jaywcjlove/mysql-tutorial">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=mysql-tutorial" />
+  </a>
+  <a href="https://github.com/jaywcjlove/nginx-tutorial">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=nginx-tutorial" />
+  </a>
+  <a href="https://github.com/jaywcjlove/awesome-uikit">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=awesome-uikit" />
+  </a>
+  <a href="https://github.com/jaywcjlove/vim-web">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=vim-web" />
+  </a>
   <br>
   <br>
   <br>
