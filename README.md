@@ -20,9 +20,9 @@
       <img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/mail.svg?sanitize=true" />
     </a>
   </p>
-  <br>
-  <br>
   <p>Hi, I'm Kenny, a frontEnd web developer from China.</p>
+  <br>
+  <br>
   <br>
   <br>
   <br>
