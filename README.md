@@ -20,7 +20,7 @@
       <img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/mail.svg?sanitize=true" />
     </a>
   </p>
-  <p>Hi, I'm Kenny, Fullstack developer from  Shanghai, China.</p>
+  <p>Hi, I'm Kenny, Fullstack developer from Shanghai, China.</p>
   <br>
   <br>
   <br>
