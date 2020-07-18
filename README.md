@@ -22,7 +22,12 @@
   </p>
   <p>Hi, I'm Kenny, Fullstack developer from Shanghai, China.</p>
   <br>
-  <br>
+  <a href="https://github.com/jaywcjlove/sgo">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=sgo" />
+  </a>
+  <a href="https://github.com/jaywcjlove/svgtofont">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=svgtofont" />
+  </a>
   <br>
   <br>
   <br>
