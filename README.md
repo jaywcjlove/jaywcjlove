@@ -39,16 +39,16 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=tsbb" />
   </a>
   <a href="https://github.com/uiwjs/react-native-alipay">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-native-alipay" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-native-alipay&show_owner=true" />
   </a>
   <a href="https://github.com/uiwjs/province-city-china">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=province-city-china" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=province-city-china&show_owner=true" />
   </a>
   <a href="https://github.com/uiwjs/react-baidu-map">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-baidu-map" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-baidu-map&show_owner=true" />
   </a>
   <a href="https://github.com/uiwjs/react-md-editor">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-md-editor" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-md-editor&show_owner=true" />
   </a>
   <a href="https://github.com/jaywcjlove/translater.js">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=translater.js" />
