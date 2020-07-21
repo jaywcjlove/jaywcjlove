@@ -46,6 +46,18 @@
   <a href="https://github.com/uiwjs/react-md-editor">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-md-editor" />
   </a>
+  <a href="https://github.com/jaywcjlove/translater.js">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=translater.js" />
+  </a>
+  <a href="https://github.com/jaywcjlove/store.js">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=store.js" />
+  </a>
+  <a href="https://github.com/jaywcjlove/validator.js">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=validator.js" />
+  </a>
+  <a href="https://github.com/jaywcjlove/react-hotkeys">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=react-hotkeys" />
+  </a>
   <a href="https://github.com/jaywcjlove/docs">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=docs" />
   </a>
