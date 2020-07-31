@@ -41,6 +41,9 @@
   <a href="https://github.com/uiwjs/react-native-alipay">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-native-alipay&show_owner=true" />
   </a>
+  <a href="https://github.com/uiwjs/react-native-amap-geolocation">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-native-amap-geolocation&show_owner=true" />
+  </a>
   <a href="https://github.com/uiwjs/province-city-china">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=province-city-china&show_owner=true" />
   </a>
@@ -79,6 +82,9 @@
   </a>
   <a href="https://github.com/jaywcjlove/vim-web">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=vim-web" />
+  </a>
+  <a href="https://github.com/uiwjs/react-codemirror">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-codemirror&show_owner=true" />
   </a>
   <br>
   <br>
