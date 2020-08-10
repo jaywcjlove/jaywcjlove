@@ -23,7 +23,7 @@
   <p>Hi, I'm Kenny, Fullstack developer from Shanghai, China.</p>
   <p>
     <a href="https://wangchujiang.com/">
-      <img src="https://github-readme-stats.vercel.app/api?username=jaywcjlove&show_icons=true&icon_color=805AD5&text_color=718096&bg_color=ffffff&hide_title=true&hide_border=true" />
+      <img src="https://github-readme-stats.vercel.app/api?username=jaywcjlove&show_icons=true&icon_color=805AD5&text_color=718096&bg_color=ffffff&hide_title=true&hide_border=true&hide=contribs,issues" />
     </a>
   </p>
   <a href="https://github.com/jaywcjlove/sgo">
