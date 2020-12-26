@@ -44,11 +44,17 @@
   <a href="https://github.com/uiwjs/react-native-amap-geolocation">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-native-amap-geolocation&show_owner=true" />
   </a>
+  <a href="https://github.com/uiwjs/react-baidu-map">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-baidu-map&show_owner=true" />
+  </a>
+  <a href="https://github.com/uiwjs/react-amap">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-amap&show_owner=true" />
+  </a>
   <a href="https://github.com/jaywcjlove/translater.js">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=translater.js" />
   </a>
-  <a href="https://github.com/uiwjs/react-baidu-map">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-baidu-map&show_owner=true" />
+  <a href="https://github.com/uiwjs/babel-plugin-transform-remove-imports">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=babel-plugin-transform-remove-imports&show_owner=true" />
   </a>
   <a href="https://github.com/uiwjs/react-md-editor">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-md-editor&show_owner=true" />
