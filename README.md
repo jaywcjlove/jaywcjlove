@@ -32,7 +32,7 @@
 </div>
 
 <details>
-<summary>More...</summary>
+<summary>More Repositories ...</summary>
 
 <a href="https://github.com/jaywcjlove/sgo">
   <img alt="sgo" src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=sgo" />
