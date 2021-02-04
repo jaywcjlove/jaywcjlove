@@ -34,6 +34,9 @@
 <details>
 <summary>More Repositories ...</summary>
 
+<a href="https://github.com/kktjs/kkt">
+  <img alt="kkt" src="https://github-readme-stats.vercel.app/api/pin/?username=kktjs&repo=kkt&show_owner=true" />
+</a>
 <a href="https://github.com/jaywcjlove/sgo">
   <img alt="sgo" src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=sgo" />
 </a>
