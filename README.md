@@ -27,6 +27,12 @@
     </a>
   </p>
   
+  <p>
+    <a href="https://wangchujiang.com/">
+      <img src="https://github-profile-trophy.vercel.app/?username=jaywcjlove&theme=flat&column=7&margin-w=10" />
+    </a>
+  </p>
+  
   <br>
   <br>
 </div>
