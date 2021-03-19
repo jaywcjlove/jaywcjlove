@@ -29,7 +29,7 @@
   
   <p>
     <a href="https://wangchujiang.com/">
-      <img src="https://github-profile-trophy.vercel.app/?username=jaywcjlove&theme=flat&title=Stars,Followers,Commit,MultiLanguage,Repositories&margin-w=5&row=1&column=5" />
+      <img src="https://github-profile-trophy.vercel.app/?username=jaywcjlove&theme=flat&title=Stars,Followers,Commit,MultiLanguage&margin-w=5&row=1&column=4" />
     </a>
   </p>
   
