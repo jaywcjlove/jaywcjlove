@@ -119,4 +119,5 @@
   <img alt="@uiw/react-codemirror" src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-codemirror&show_owner=true" />
 </a>
   <img src="https://profile-counter.glitch.me/jaywcjlove/count.svg" />
+  <img src="https://komarev.com/ghpvc/?username=jaywcjlove&color=green" />
 </details>
