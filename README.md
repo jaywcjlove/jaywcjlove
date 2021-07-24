@@ -128,5 +128,6 @@
 <a href="https://uiwjs.github.io/react-run-web/">run-web</a> • 
 <a href="https://uiwjs.github.io/keycode-info/">keycode-info</a> • 
 <a href="https://uiwjs.github.io/ui-color/">ui-color</a> • 
-<a href="https://jaywcjlove.github.io/nginx-editor/">nginx-editor</a>
+<a href="https://jaywcjlove.github.io/nginx-editor/">nginx-editor</a> • 
+<a href="https://jaywcjlove.github.io/linux-command/">linux-command</a>
 
