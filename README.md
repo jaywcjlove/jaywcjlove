@@ -118,6 +118,14 @@
 <a href="https://github.com/uiwjs/react-codemirror">
   <img alt="@uiw/react-codemirror" src="https://github-readme-stats.vercel.app/api/pin/?username=uiwjs&repo=react-codemirror&show_owner=true" />
 </a>
+
+<a href="https://github.com/jaywcjlove/markdown-to-html-cli">
+  <img alt="markdown-to-html-cli" src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=markdown-to-html-cli&show_owner=true" />
+</a>
+
+<a href="https://github.com/jaywcjlove/coverage-badges-cli">
+  <img alt="coverage-badges-cli" src="https://github-readme-stats.vercel.app/api/pin/?username=jaywcjlove&repo=coverage-badges-cli&show_owner=true" />
+</a>
   <img src="https://profile-counter.glitch.me/jaywcjlove/count.svg" />
   <img src="https://komarev.com/ghpvc/?username=jaywcjlove&color=green" />
 </details>
