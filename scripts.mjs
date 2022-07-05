@@ -46,8 +46,10 @@ const versionGithubExclude = [
   "jaywcjlove/my-repos",
   "jaywcjlove/webpack-multipage-demo",
   "jaywcjlove/online-Tv",
-  "jaywcjlove/online-Tv",
+  "jaywcjlove/animate.styl",
+  "jaywcjlove/auto-gitee-mirror",
   "jaywcjlove/Proxy",
+  "jaywcjlove/BlankTab",
   "jaywcjlove/react-native-macos-amac",
   "jaywcjlove/shouyinji",
 ];
