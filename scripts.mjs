@@ -128,6 +128,27 @@ const packages = {
   'jaywcjlove/validator.js': 'packages/core/package.json',
   'jaywcjlove/tools': 'website/package.json',
 }
+
+/** category */
+const handbookInclued = [
+  'nginx-tutorial',
+  'mysql-tutorial',
+  'awesome-uikit',
+  'awesome-mac',
+  'c-tutorial',
+  'docker-tutorial',
+  'git-tips',
+  'github-actions',
+  'golang-tutorial',
+  'handbook',
+  'html-tutorial',
+  'react-native',
+  'regexp-example',
+  'shell-tutorial',
+  'swift-tutorial',
+  'swiftui-example',
+];
+const handbook = [];
 /**
  * [{
  *   github: 'kktjs/kkt',
@@ -204,26 +225,28 @@ const reposData = [];
         name, github: full_name, package: pkg, npm, homepage, watchers_count, forks_count, stargazers_count
       };
     })
+    .filter(Boolean)
     .sort((a, b) => compare(a.stargazers_count, b.stargazers_count))
+    .filter(repo => {
+      if (handbookInclued.includes(repo.name)) {
+        handbook.push(repo);
+        return null;
+      }
+      return repo;
+
+    })
     .filter(Boolean);
 
   const dataPath = path.relative(process.cwd(), 'data.json');
   await fs.writeFileSync(dataPath, JSON.stringify(baseData, null, 2));
 
-  // [kkt](https://github.com/kktjs/kkt)
-  // [`#homepage`](https://kktjs.github.io/kkt/)
-  // [![GitHub stars](https://img.shields.io/github/stars/kktjs/kkt?style=flat)](https://github.com/kktjs/kkt/stargazers)
-  // [![GitHub last commit](https://img.shields.io/github/last-commit/kktjs/kkt?style=flat&label=last)](https://github.com/kktjs/kkt/commits)
-  // [![NPM Downloads](https://img.shields.io/npm/dm/kkt.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/kkt)
-  // [![npm version](https://img.shields.io/npm/v/kkt.svg?logo=npm)](https://www.npmjs.com/package/kkt)
-  // ![GitHub package version](https://img.shields.io/github/package-json/v/kktjs/kkt?style=flat&label=&labelColor=555&logo=github&filename=core%2Fpackage.json)
-  // console.log('str>>>:::', str)
-  
   const mdPath = path.resolve(process.cwd(), 'README.md');
   const mdstr = fs.readFileSync(mdPath);
-  const mdResult = mdstr.toString().replace(/<!--repos-start--\>(.*)\s+([\s\S]*?)(\s.+)?<!--repos-end-->/, `<!--repos-start-->\n\n${getMdTableStr(baseData)}\n\n<!--repos-end-->`);
-  
-  fs.writeFileSync(mdPath, mdResult);
+
+  let innerMarkdown = mdstr.toString().replace(/<!--repos-start--\>(.*)\s+([\s\S]*?)(\s.+)?<!--repos-end-->/, `<!--repos-start-->\n\n${getMdTableStr(baseData)}\n\n<!--repos-end-->`);
+  innerMarkdown = innerMarkdown.replace(/<!--repos-handbook-start-->(.*)\s+([\s\S]*?)(\s.+)?<!--repos-handbook-end-->/, `<!--repos-handbook-start-->\n\n${getMdTableStr(handbook)}\n\n<!--repos-handbook-end-->`)
+
+  fs.writeFileSync(mdPath, innerMarkdown);
 
 })();
 
