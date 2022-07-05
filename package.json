@@ -1,0 +1,15 @@
+{
+  "name": "jaywcjlove",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node scripts.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaywcjlove/jaywcjlove.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "octokit": "^1.8.1"
+  }
+}
