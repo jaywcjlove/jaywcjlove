@@ -151,13 +151,13 @@ const data = [
 
 function getMdTableStr(dt = []) {
   const str = [
-    ' project | homepage | stars | last commit | downloads | version ',
-    ' :--- | --- | :--- | :--- | :--- | :--- ',
+    'project | homepage | stars | last commit | downloads | version ',
+    ':--- | --- | :--- | :--- | :--- | :--- ',
   ];
   
   dt.forEach(item => {
     const dt = [];
-    dt[0] = item.github ? `[${item.github}](https://github.com/${item.github})` : '-';
+    dt[0] = item.github ? `[${item.github.replace(/^jaywcjlove\//, '')}](https://github.com/${item.github})` : '-';
     dt[1] = item.homepage ? `[\`#homepage\`](${item.homepage})` : '-';
     dt[2] = item.github ? `[![GitHub stars](https://img.shields.io/github/stars/${item.github}?style=flat)](https://github.com/${item.github}/stargazers)` : '-';
     dt[3] = item.github ? `[![GitHub last commit](https://img.shields.io/github/last-commit/${item.github}?style=flat&label=last)](https://github.com/${item.github}/commits)` : '-';
@@ -171,10 +171,7 @@ function getMdTableStr(dt = []) {
   return str.join('\n');
 }
 
-const octokit = new Octokit({
-  auth: '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'
-});
-
+const octokit = new Octokit({ auth: '' });
 
 function formatData(dt= []) {
   dt.forEach((item) => {
