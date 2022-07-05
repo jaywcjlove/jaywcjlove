@@ -1,2 +1,23 @@
 node_modules
 package-lock.json
+data.json
+
+.evn
+.DS_Store
+.cache
+.vscode
+.idea
+.env
+
+*.bak
+*.tem
+*.temp
+#.swp
+*.*~
+~*.*
+
+# IDEA
+*.iml
+*.ipr
+*.iws
+.idea/

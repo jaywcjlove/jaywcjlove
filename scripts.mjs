@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import fs from 'fs';
 import path from 'path';
 import { Octokit } from 'octokit';
@@ -26,6 +27,30 @@ const npms = {
   'jaywcjlove/generate-password': '@wcj/generate-password',
 }
 
+const versionGithubExclude = [
+  "jaywcjlove/golang-tutorial",
+  "jaywcjlove/sb",
+  "jaywcjlove/jaywcjlove.github.io",
+  "jaywcjlove/webpack-react-demo",
+  "jaywcjlove/jaywcjlove",
+  "jaywcjlove/react-native-typescript-example",
+  "jaywcjlove/IE6PNG",
+  "jaywcjlove/vue-koa-demo",
+  "jaywcjlove/appstore",
+  "jaywcjlove/outdatedbrowser",
+  "jaywcjlove/spec",
+  "jaywcjlove/FrontEndBlogCN",
+  "jaywcjlove/debugger-terminator",
+  "jaywcjlove/react-native",
+  "jaywcjlove/ejs2-loader",
+  "jaywcjlove/my-repos",
+  "jaywcjlove/webpack-multipage-demo",
+  "jaywcjlove/online-Tv",
+  "jaywcjlove/online-Tv",
+  "jaywcjlove/Proxy",
+  "jaywcjlove/react-native-macos-amac",
+  "jaywcjlove/shouyinji",
+];
 const npmsExclude = [
   'jaywcjlove/swift-tutorial',
   'jaywcjlove/docs',
@@ -101,54 +126,14 @@ const packages = {
   'jaywcjlove/validator.js': 'packages/core/package.json',
   'jaywcjlove/tools': 'website/package.json',
 }
-
-const data = [
-  {
-    github: 'kktjs/kkt',
-    homepage: 'https://kktjs.github.io/kkt/',
-    npm: 'kkt',
-    package: 'core/package.json'
-  },
-  {
-    github: 'jaywcjlove/tsbb'
-  },
-  { github: 'jaywcjlove/hotkeys' },
-  { github: 'jaywcjlove/idoc' },
-  { github: 'jaywcjlove/rehype-rewrite' },
-  { github: 'jaywcjlove/colors-cli' },
-  { github: 'jaywcjlove/rehype-video' },
-  { github: 'jaywcjlove/rehype-attr' },
-  { github: 'jaywcjlove/rehype-ignore' },
-  { github: 'jaywcjlove/compile-less' },
-  { github: 'jaywcjlove/svgtofont' },
-  { github: 'jaywcjlove/mocker-api' },
-  { github: 'jaywcjlove/sgo' },
-  { github: 'jaywcjlove/translater.js' },
-  { github: 'jaywcjlove/store.js' },
-  { github: 'jaywcjlove/cookie.js' },
-  { github: 'jaywcjlove/markdown-to-html-cli' },
-  { github: 'jaywcjlove/coverage-badges-cli' },
-  { github: 'jaywcjlove/validator.js' },
-  { github: 'jaywcjlove/github-rank' },
-  { github: 'jaywcjlove/react-hotkeys' },
-  { github: 'jaywcjlove/docs' },
-  { github: 'jaywcjlove/nginx-tutorial' },
-  { github: 'jaywcjlove/mysql-tutorial' },
-  { github: 'jaywcjlove/dev-site' },
-  { github: 'jaywcjlove/tools' },
-  { github: 'jaywcjlove/linux-command' },
-  { github: 'jaywcjlove/iNotify' },
-  { github: 'jaywcjlove/awesome-uikit' },
-  { github: 'jaywcjlove/awesome-mac' },
-  { github: 'jaywcjlove/vim-web' },
-  { github: 'jaywcjlove/action-ejs' },
-  { github: 'jaywcjlove/changelog-generator' },
-  { github: 'jaywcjlove/create-tag-action' },
-  { github: 'jaywcjlove/create-tag-action' },
-  { github: 'jaywcjlove/github-action-contributors' },
-  { github: 'jaywcjlove/generated-badges' },
-];
-
+/**
+ * [{
+ *   github: 'kktjs/kkt',
+ *   homepage: 'https://kktjs.github.io/kkt/',
+ *   npm: 'kkt',
+ *   package: 'core/package.json'
+ * },]
+ */
 function getMdTableStr(dt = []) {
   const str = [
     'project | homepage | stars | last commit | downloads | version ',
@@ -162,73 +147,66 @@ function getMdTableStr(dt = []) {
     dt[2] = item.github ? `[![GitHub stars](https://img.shields.io/github/stars/${item.github}?style=flat)](https://github.com/${item.github}/stargazers)` : '-';
     dt[3] = item.github ? `[![GitHub last commit](https://img.shields.io/github/last-commit/${item.github}?style=flat&label=last)](https://github.com/${item.github}/commits)` : '-';
     dt[4] = item.npm ? `[![NPM Downloads](https://img.shields.io/npm/dm/${item.npm}.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/${item.npm})` : '-';
-  
+    // https://img.shields.io/github/v/release/jaywcjlove/awesome-mac
     const npmVersion = item.npm ? `[![npm version](https://img.shields.io/npm/v/${item.npm}.svg?logo=npm)](https://www.npmjs.com/package/${item.npm})` : '';
-    const githubVersion = item.package ? `![GitHub package version](https://img.shields.io/github/package-json/v/${item.github}?style=flat&label=&labelColor=555&logo=github&filename=${item.package})` : '';
-    dt[5] = `${npmVersion} ${githubVersion}`
+    const githubVersion = item.package ? `![GitHub package version](https://img.shields.io/github/v/tag/${item.github}?style=flat&label=&labelColor=555&logo=github)` : '';
+    dt[5] = npmVersion ? npmVersion : githubVersion;
     str.push(dt.join(' | '));
   });
   return str.join('\n');
 }
 
-const octokit = new Octokit({ auth: '' });
-
-function formatData(dt= []) {
-  dt.forEach((item) => {
-    const find = data.findIndex(m => m.github === item.full_name);
-    if (find > -1) {
-      if (packages[item.full_name]) {
-        data[find].package = packages[item.full_name];
-      }
-      const findName = npmsExclude.findIndex(m => m === item.full_name);
-      if (npms[item.full_name]) {
-        data[find].npm = npms[item.full_name];
-      } else if (findName < 0) {
-        // console.log(item)
-        data[find].npm = item.name;
-      }
-      data[find].homepage = item.homepage;
-      if (data[find].npm) {
-        data[find].package = 'package.json';
-      }
-    } else if (item.full_name !== 'jaywcjlove/package.json') {
-      const newData = {
-        github: item.full_name,
-        homepage: item.homepage,
-      }
-      if (packages[item.full_name]) {
-        newData.package = packages[item.full_name];
-      }
-
-      const findName = npmsExclude.findIndex(m => m === item.full_name);
-      if (npms[item.full_name]) {
-        newData.npm = npms[item.full_name];
-      } else if (findName < 0) {
-        newData.npm = item.name;
-      }
-      data.push({ ...newData });
-      if (newData.npm) {
-        newData.package = 'package.json';
-      }
-    }
-  });
+function compare(a, b) {
+  if (a < b ) {
+    return 1;
+  }
+  if (a > b ) {
+    return -1;
+  }
+  return 0;
 }
+
+const octokit = new Octokit({ auth: process.env.AUTH || '' });
+const reposData = [];
 
 ;(async () => {
   const result = await octokit.request('GET /users/{username}/repos?per_page=100&page=1', {
     username: 'jaywcjlove'
   });
   if (result.data && result.data.length) {
-    console.log(`\x1b[35;1m page1 data:\x1b[0m \x1b[32;1m${result.data.length}\x1b[0m`)
-    formatData(result.data);
+    reposData.push(result.data);
+    console.log(`\x1b[35;1m page1 data:\x1b[0m \x1b[32;1m${result.data.length}\x1b[0m`);
   }
   const result2 = await octokit.request('GET /users/{username}/repos?per_page=100&page=2', {
     username: 'jaywcjlove'
   });
   if (result2.data && result2.data.length) {
+    reposData.push(result2.data);
     console.log(`\x1b[35;1m page2 data:\x1b[0m \x1b[32;1m${result2.data.length}\x1b[0m`);
-    formatData(result2.data);
   }
+  const baseData = reposData.flat()
+    .map(({ name, full_name, homepage, watchers_count, forks_count, stargazers_count }) => {
+      if (name === 'package.json') return;
+      let pkg, npm = undefined;
+      if (packages[full_name]) {
+        pkg = packages[full_name];
+      } else if (!versionGithubExclude.includes(full_name)) {
+        pkg = 'package.json';
+      }
+      if (npms[full_name]) {
+        npm = npms[full_name];
+      } else if (!npmsExclude.includes(full_name)) {
+        npm = name;
+      }
+      return {
+        name, github: full_name, package: pkg, npm, homepage, watchers_count, forks_count, stargazers_count
+      };
+    })
+    .sort((a, b) => compare(a.stargazers_count, b.stargazers_count))
+    .filter(Boolean);
+
+  const dataPath = path.relative(process.cwd(), 'data.json');
+  await fs.writeFileSync(dataPath, JSON.stringify(baseData, null, 2));
 
   // [kkt](https://github.com/kktjs/kkt)
   // [`#homepage`](https://kktjs.github.io/kkt/)
@@ -241,7 +219,7 @@ function formatData(dt= []) {
   
   const mdPath = path.resolve(process.cwd(), 'README.md');
   const mdstr = fs.readFileSync(mdPath);
-  const mdResult = mdstr.toString().replace(/<!--repos-start--\>(.*)\s+([\s\S]*?)(\s.+)?<!--repos-end-->/, `<!--repos-start-->\n\n${getMdTableStr(data)}\n\n<!--repos-end-->`);
+  const mdResult = mdstr.toString().replace(/<!--repos-start--\>(.*)\s+([\s\S]*?)(\s.+)?<!--repos-end-->/, `<!--repos-start-->\n\n${getMdTableStr(baseData)}\n\n<!--repos-end-->`);
   
   fs.writeFileSync(mdPath, mdResult);
 

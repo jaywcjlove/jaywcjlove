@@ -1,6 +1,7 @@
 {
   "name": "jaywcjlove",
   "version": "1.0.0",
+  "main": "data.json",
   "scripts": {
     "start": "node scripts.mjs"
   },
@@ -9,7 +10,8 @@
     "url": "git+https://github.com/jaywcjlove/jaywcjlove.git"
   },
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "dotenv": "^16.0.1",
     "octokit": "^1.8.1"
   }
 }
