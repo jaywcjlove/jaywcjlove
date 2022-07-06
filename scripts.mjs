@@ -41,7 +41,6 @@ const versionGithubExclude = [
   "jaywcjlove/spec",
   "jaywcjlove/FrontEndBlogCN",
   "jaywcjlove/debugger-terminator",
-  "jaywcjlove/react-native",
   "jaywcjlove/ejs2-loader",
   "jaywcjlove/my-repos",
   "jaywcjlove/webpack-multipage-demo",
