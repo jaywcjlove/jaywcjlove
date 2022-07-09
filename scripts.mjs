@@ -207,8 +207,8 @@ const reposData = [];
     console.log(`\x1b[35;1m page2 data:\x1b[0m \x1b[32;1m${result2.data.length}\x1b[0m`);
   }
   const baseData = reposData.flat()
-    .map(({ name, full_name, homepage, watchers_count, forks_count, stargazers_count }) => {
-      if (name === 'package.json') return;
+    .map(({ name, full_name, homepage, archived, watchers_count, forks_count, stargazers_count }) => {
+      if (name === 'package.json' || archived) return;
       let pkg, npm = undefined;
       if (packages[full_name]) {
         pkg = packages[full_name];
@@ -245,6 +245,8 @@ const reposData = [];
   let innerMarkdown = mdstr.toString().replace(/<!--repos-start--\>(.*)\s+([\s\S]*?)(\s.+)?<!--repos-end-->/, `<!--repos-start-->\n\n${getMdTableStr(baseData)}\n\n<!--repos-end-->`);
   innerMarkdown = innerMarkdown.replace(/<!--repos-handbook-start-->(.*)\s+([\s\S]*?)(\s.+)?<!--repos-handbook-end-->/, `<!--repos-handbook-start-->\n\n${getMdTableStr(handbook)}\n\n<!--repos-handbook-end-->`)
 
+  console.log(`\x1b[35;1m baseData data:\x1b[0m \x1b[32;1m${baseData.length}\x1b[0m`);
+  console.log(`\x1b[35;1m handbook data:\x1b[0m \x1b[32;1m${handbook.length}\x1b[0m`);
   fs.writeFileSync(mdPath, innerMarkdown);
 
 })();
