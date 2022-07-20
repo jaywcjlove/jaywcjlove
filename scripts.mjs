@@ -9,6 +9,7 @@ const npms = {
   'jaywcjlove/compile-less': 'compile-less-cli',
   'jaywcjlove/store.js': 'storejs',
   'jaywcjlove/cookie.js': 'cookiejs',
+  'jaywcjlove/date.js': '@wcj/date',
   'jaywcjlove/validator.js': 'validator.tool',
   'jaywcjlove/github-rank': '@wcj/github-rank',
   'jaywcjlove/react-hotkeys': 'react-hot-keys',
