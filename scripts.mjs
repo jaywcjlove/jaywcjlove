@@ -104,6 +104,7 @@ const npmsExclude = [
   'jaywcjlove/react-native-doc',
   'jaywcjlove/react-native-macos-amac',
   'jaywcjlove/react-native-typescript-example',
+  'jaywcjlove/rust-cn-document-for-docker',
   'jaywcjlove/regexp-example',
   'jaywcjlove/rollup-demo',
   'jaywcjlove/sb',
