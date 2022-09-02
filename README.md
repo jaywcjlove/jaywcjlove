@@ -171,6 +171,7 @@ project | homepage | stars | last commit | downloads | version
 
 [**Web Tool**](https://jaywcjlove.github.io/tools) • 
 [**SVG Icon Search**](https://icongo.github.io/) • 
+[**WXMP**](https://jaywcjlove.github.io/wxmp) • 
 [json-viewer](https://uiwjs.github.io/json-viewer/) • 
 [npm-unpkg](https://uiwjs.github.io/npm-unpkg/) • 
 [run-web](https://uiwjs.github.io/react-run-web/) • 
