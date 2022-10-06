@@ -173,7 +173,7 @@ project | homepage | stars | last commit | downloads | version
 [**SVG Icon Search**](https://icongo.github.io/) • 
 [**WXMP**](https://jaywcjlove.github.io/wxmp) • 
 [**CodeImage**](https://jaywcjlove.github.io/code-image) • 
-[**Quick Reference**](https://github.com/jaywcjlove/reference) • 
+[**Quick Reference**](https://jaywcjlove.github.io/reference) • 
 [json-viewer](https://uiwjs.github.io/json-viewer/) • 
 [npm-unpkg](https://uiwjs.github.io/npm-unpkg/) • 
 [run-web](https://uiwjs.github.io/react-run-web/) • 
