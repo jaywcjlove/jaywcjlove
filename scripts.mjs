@@ -71,6 +71,7 @@ const npmsExclude = [
   'jaywcjlove/auto-gitee-mirror',
   'jaywcjlove/AutoPrefixCSS',
   'jaywcjlove/BlankTab',
+  'jaywcjlove/reference',
   'jaywcjlove/c-tutorial',
   'jaywcjlove/debugger-terminator',
   'jaywcjlove/doc-static',
