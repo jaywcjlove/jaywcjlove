@@ -59,12 +59,14 @@ const npmsExclude = [
   'jaywcjlove/nginx-tutorial',
   'jaywcjlove/mysql-tutorial',
   'jaywcjlove/tools',
+  'jaywcjlove/code-image',
   'jaywcjlove/awesome-uikit',
   'jaywcjlove/vim-web',
   'jaywcjlove/action-ejs',
   'jaywcjlove/changelog-generator',
   'jaywcjlove/create-tag-action',
   'jaywcjlove/github-action-contributors',
+  'jaywcjlove/github-action-modify-file-content',
   'jaywcjlove/amac',
   'jaywcjlove/animate.styl',
   'jaywcjlove/appstore',
@@ -149,6 +151,7 @@ const handbookInclued = [
   'shell-tutorial',
   'swift-tutorial',
   'swiftui-example',
+  'reference',
 ];
 const handbook = [];
 /**
