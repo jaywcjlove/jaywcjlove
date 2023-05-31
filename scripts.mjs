@@ -23,6 +23,7 @@ const npms = {
   'jaywcjlove/table-of-general-standard-chinese-characters': 'togscc',
   'jaywcjlove/webpack-plugin-manifest': 'webpack-manifest',
   'jaywcjlove/websocket': 'websocketjs',
+  'jaywcjlove/typenexus': 'typenexus',
   'jaywcjlove/whereis': '@wcjiang/whereis',
   'jaywcjlove/nginx-editor': 'monaco-editor-nginx',
   'jaywcjlove/generate-password': '@wcj/generate-password',
