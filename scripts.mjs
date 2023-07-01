@@ -68,6 +68,7 @@ const npmsExclude = [
   'jaywcjlove/create-tag-action',
   'jaywcjlove/github-action-contributors',
   'jaywcjlove/github-action-modify-file-content',
+  'jaywcjlove/github-action-read-file',
   'jaywcjlove/amac',
   'jaywcjlove/animate.styl',
   'jaywcjlove/appstore',
