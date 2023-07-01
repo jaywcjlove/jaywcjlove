@@ -24,8 +24,9 @@ const npms = {
   'jaywcjlove/webpack-plugin-manifest': 'webpack-manifest',
   'jaywcjlove/websocket': 'websocketjs',
   'jaywcjlove/typenexus': 'typenexus',
-  'jaywcjlove/whereis': '@wcjiang/whereis',
   'jaywcjlove/nginx-editor': 'monaco-editor-nginx',
+  'jaywcjlove/whereis': '@wcjiang/whereis',
+  'jaywcjlove/markdown-style': '@wcj/markdown-style',
   'jaywcjlove/generate-password': '@wcj/generate-password',
 }
 
@@ -62,6 +63,7 @@ const npmsExclude = [
   'jaywcjlove/tools',
   'jaywcjlove/code-image',
   'jaywcjlove/awesome-uikit',
+  'jaywcjlove/awesome-chatgpt',
   'jaywcjlove/vim-web',
   'jaywcjlove/action-ejs',
   'jaywcjlove/changelog-generator',
@@ -108,6 +110,7 @@ const npmsExclude = [
   'jaywcjlove/react-native',
   'jaywcjlove/react-native-doc',
   'jaywcjlove/react-native-macos-amac',
+  'jaywcjlove/react-components-awesome',
   'jaywcjlove/react-native-typescript-example',
   'jaywcjlove/rust-cn-document-for-docker',
   'jaywcjlove/regexp-example',
