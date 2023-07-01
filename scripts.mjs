@@ -36,6 +36,8 @@ const versionGithubExclude = [
   "jaywcjlove/jaywcjlove.github.io",
   "jaywcjlove/webpack-react-demo",
   "jaywcjlove/jaywcjlove",
+  "jaywcjlove/react-components-awesome",
+  "jaywcjlove/react-native-macos-amac",
   "jaywcjlove/react-native-typescript-example",
   "jaywcjlove/IE6PNG",
   "jaywcjlove/vue-koa-demo",
@@ -52,7 +54,7 @@ const versionGithubExclude = [
   "jaywcjlove/auto-gitee-mirror",
   "jaywcjlove/Proxy",
   "jaywcjlove/BlankTab",
-  "jaywcjlove/react-native-macos-amac",
+  'jaywcjlove/awesome-chatgpt',
   "jaywcjlove/shouyinji",
 ];
 const npmsExclude = [
@@ -167,8 +169,10 @@ const handbook = [];
  *   package: 'core/package.json'
  * },]
  */
-function getMdTableStr(dt = []) {
-  const str = [
+function getMdTableStr(dt = [], isSub = false) {
+  const str = isSub ? [
+    '**project** | **homepage** | **stars** | **last commit** | **downloads** | **version** ',
+  ] : [
     'project | homepage | stars | last commit | downloads | version ',
     ':--- | --- | :--- | :--- | :--- | :--- ',
   ];
@@ -253,8 +257,8 @@ const reposData = [];
   const mdPath = path.resolve(process.cwd(), 'README.md');
   const mdstr = fs.readFileSync(mdPath);
 
-  let innerMarkdown = mdstr.toString().replace(/<!--repos-start--\>(.*)\s+([\s\S]*?)(\s.+)?<!--repos-end-->/, `<!--repos-start-->\n\n${getMdTableStr(baseData)}\n\n<!--repos-end-->`);
-  innerMarkdown = innerMarkdown.replace(/<!--repos-handbook-start-->(.*)\s+([\s\S]*?)(\s.+)?<!--repos-handbook-end-->/, `<!--repos-handbook-start-->\n\n${getMdTableStr(handbook)}\n\n<!--repos-handbook-end-->`)
+  let innerMarkdown = mdstr.toString().replace(/<!--repos-start--\>(.*)\s+([\s\S]*?)(\s.+)?<!--repos-end-->/, `<!--repos-start-->\n\n${getMdTableStr(handbook)}\n${getMdTableStr(baseData, true)}\n\n<!--repos-end-->`);
+  //innerMarkdown = innerMarkdown.replace(/<!--repos-handbook-start-->(.*)\s+([\s\S]*?)(\s.+)?<!--repos-handbook-end-->/, `<!--repos-handbook-start-->\n\n${getMdTableStr(handbook)}\n\n<!--repos-handbook-end-->`)
 
   console.log(`\x1b[35;1m baseData data:\x1b[0m \x1b[32;1m${baseData.length}\x1b[0m`);
   console.log(`\x1b[35;1m handbook data:\x1b[0m \x1b[32;1m${handbook.length}\x1b[0m`);
