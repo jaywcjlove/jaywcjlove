@@ -5,10 +5,11 @@ import { Octokit } from 'octokit';
 
 const npms = {
   'kktjs/kkt': 'kkt',
-  'jaywcjlove/hotkeys': 'hotkeys-js',
+  'jaywcjlove/hotkeys-js': 'hotkeys-js',
   'jaywcjlove/compile-less': 'compile-less-cli',
-  'jaywcjlove/store.js': 'storejs',
   'jaywcjlove/cookie.js': 'cookiejs',
+  'jaywcjlove/store.js': 'storejs',
+  'jaywcjlove/dark-mode': '@wcj/dark-mode',
   'jaywcjlove/date.js': '@wcj/date',
   'jaywcjlove/validator.js': 'validator.tool',
   'jaywcjlove/github-rank': '@wcj/github-rank',
