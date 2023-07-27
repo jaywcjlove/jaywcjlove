@@ -15,7 +15,7 @@ function getProjectLineString(item) {
   dt[3] = item.github ? `[![GitHub last commit](https://img.shields.io/github/last-commit/${item.github}?style=flat&label=last)](https://github.com/${item.github}/commits)` : ' ';
   dt[4] = item.npm ? `[![NPM Downloads](https://img.shields.io/npm/dm/${item.npm}.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/${item.npm})` : ' ';
 
-  const npmVersion = item.npm ? `[![npm version](https://img.shields.io/npm/v/${item.npm}.svg?logo=npm)](https://www.npmjs.com/package/${item.npm})` : '';
+  const npmVersion = item.npm ? `[![npm version](https://img.shields.io/npm/v/${item.npm}.svg?label=&logo=npm)](https://www.npmjs.com/package/${item.npm})` : '';
   const githubVersion = item.version ? `![GitHub package version](https://img.shields.io/github/v/tag/${item.github}?style=flat&label=&labelColor=555&logo=github)` : '';
   dt[5] = npmVersion ? npmVersion : githubVersion;
   if (item.stars === false) {
