@@ -123,6 +123,26 @@
     "version": true,
     "category": "action"
   },
+  "jaywcjlove/rehype-attr": {
+    "npm": true,
+    "version": true,
+    "category": "rehype"
+  },
+  "jaywcjlove/rehype-rewrite": {
+    "npm": true,
+    "version": true,
+    "category": "rehype"
+  },
+  "jaywcjlove/rehype-video": {
+    "npm": true,
+    "version": true,
+    "category": "rehype"
+  },
+  "jaywcjlove/rehype-ignore": {
+    "npm": true,
+    "version": true,
+    "category": "rehype"
+  },
   "jaywcjlove/linux-command": {
     "npm": true,
     "version": true
@@ -270,10 +290,6 @@
   "jaywcjlove/jaywcjlove": {
     "version": false
   },
-  "jaywcjlove/rehype-attr": {
-    "npm": true,
-    "version": true
-  },
   "jaywcjlove/nginx-editor": {
     "npm": true,
     "version": true,
@@ -326,10 +342,6 @@
     "npm": true,
     "version": true
   },
-  "jaywcjlove/rehype-rewrite": {
-    "npm": true,
-    "version": true
-  },
   "jaywcjlove/dark-mode": {
     "npm": true,
     "version": true,
@@ -366,10 +378,6 @@
     "version": true
   },
   "jaywcjlove/react-dynamic-loadable": {
-    "npm": true,
-    "version": true
-  },
-  "jaywcjlove/rehype-video": {
     "npm": true,
     "version": true
   },
@@ -451,10 +459,6 @@
     "npm": true,
     "version": true
   },
-  "jaywcjlove/rehype-ignore": {
-    "npm": true,
-    "version": true
-  },
   "jaywcjlove/colors-named-hex": {
     "npm": true,
     "version": true
@@ -497,5 +501,10 @@
   "jaywcjlove/shouyinji": {},
   "jaywcjlove/spec": {},
   "jaywcjlove/vue-koa-demo": {},
-  "jaywcjlove/webpack-multipage-demo": {}
+  "jaywcjlove/webpack-multipage-demo": {},
+  "jaywcjlove/chinese-numerals": {
+    "npm": true,
+    "version": true,
+    "npm_name": "@wcj/chinese-numerals"
+  }
 }

@@ -97,16 +97,20 @@ function compare(a, b) {
     [], // 2
     '**Github Actions** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
     [], // 4
-    '**Project** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
+    '**Rehype Plugins** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
     [], // 6
+    '**Other Project** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
+    [], // 8
   ];
   baseData.forEach((item) => {
     if (item.category === 'handbook') {
       markdownTable[2].push(getProjectLineString(item));
     } else if (item.category === 'action') {
       markdownTable[4].push(getProjectLineString(item));
-    } else {
+    } else if (item.category === 'rehype') {
       markdownTable[6].push(getProjectLineString(item));
+    } else {
+      markdownTable[8].push(getProjectLineString(item));
     }
   });
 
