@@ -506,5 +506,10 @@
     "npm": true,
     "version": true,
     "npm_name": "@wcj/chinese-numerals"
+  },
+  "jaywcjlove/ejs-cli": {
+    "npm": true,
+    "version": true,
+    "npm_name": "@wcj/ejs-cli"
   }
 }
