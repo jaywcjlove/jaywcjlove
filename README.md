@@ -16,7 +16,7 @@
     <a href="https://twitter.com/jaywcjlove">
       <img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/twitter.svg?sanitize=true" />
     </a>
-    <a href="mailto:wowohoo@qq.com">
+    <a href="mailto:kennyiseeyou@gmail.com">
       <img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/mail.svg?sanitize=true" />
     </a>
   </p>
