@@ -180,6 +180,7 @@
 
 </details>
 
+
 [**Web Tool**](https://jaywcjlove.github.io/tools) • 
 [**SVG Icon Search**](https://icongo.github.io/) • 
 [**WXMP**](https://jaywcjlove.github.io/wxmp) • 
@@ -198,3 +199,5 @@
 [regexp-example](https://jaywcjlove.github.io/regexp-example) • 
 [URL Decoder/Encoder](https://jaywcjlove.github.io/url-encode)
 
+
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://jaywcjlove.github.io/#/sponsor)
