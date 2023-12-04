@@ -175,9 +175,6 @@
 
 <!--repos-end-->
 
-<img src="https://profile-counter.glitch.me/jaywcjlove/count.svg" />
-<img src="https://komarev.com/ghpvc/?username=jaywcjlove&color=green" />
-
 </details>
 
 
