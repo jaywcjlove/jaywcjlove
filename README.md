@@ -198,7 +198,7 @@
 
 ### My macOS application
 
-<div style="display: inline_block"><br>
+<div style="display: inline_block">
   <img align="center" alt="Iconize Folder" height="30" width="30" src="https://github.com/jaywcjlove/jaywcjlove/assets/1680273/fa9d8b9c-1e51-4ded-877c-fa5b21c47220">
   <a target="_blank" href="https://apps.apple.com/app/resumerevise/id6478511402" title="Textsound Saver AppStore">
     <img align="center" alt="Textsound Saver" height="30" width="30" src="https://github.com/jaywcjlove/jaywcjlove/assets/1680273/0595e842-980b-4574-8891-a8ba853a08be">
