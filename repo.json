@@ -511,5 +511,10 @@
     "npm": true,
     "version": true,
     "npm_name": "@wcj/ejs-cli"
-  }
+  },
+  "jaywcjlove/DevHub": {},
+  "jaywcjlove/IconizeFolder": {},
+  "jaywcjlove/swiftui-searchfield": {},
+  "jaywcjlove/TextSoundSaver": {},
+  "jaywcjlove/zh-hans.react.dev-for-docker": {}
 }
