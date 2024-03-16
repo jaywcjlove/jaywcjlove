@@ -516,5 +516,12 @@
   "jaywcjlove/IconizeFolder": {},
   "jaywcjlove/swiftui-searchfield": {},
   "jaywcjlove/TextSoundSaver": {},
-  "jaywcjlove/zh-hans.react.dev-for-docker": {}
+  "jaywcjlove/zh-hans.react.dev-for-docker": {},
+  "jaywcjlove/remark-github-blockquote-alert": {
+    "npm": true,
+    "version": true,
+    "category": "rehype"
+  },
+  "jaywcjlove/ResumeRevise": {},
+  "jaywcjlove/time-passage": {}
 }
