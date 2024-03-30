@@ -3,6 +3,7 @@
   <br>
   <br>
   <br>
+  <br>
   <a href="https://wangchujiang.com/">
     <img width="60" height="60" src="https://avatars0.githubusercontent.com/u/1680273?s=460&u=4471b74deb9973096418a93960c664c5ea3bd159&v=4" />
   </a>
@@ -38,7 +39,6 @@
     <a target="_blank" href="https://apps.apple.com/app/palettegenius/id6472593276" title="Palette Genius for macOS"><img align="center" alt="Palette Genius" height="50" width="50" src="https://github.com/jaywcjlove/jaywcjlove/assets/1680273/27340413-d355-45b2-8f6f-6ac37682d957"></a>
     <a target="_blank" href="https://apps.apple.com/app/symbolscribe/id6470879005" title="Symbol Scribe for macOS"><img align="center" alt="Symbol Scribe" height="50" width="50" src="https://github.com/jaywcjlove/jaywcjlove/assets/1680273/c7249f05-fa70-4def-a1e9-571d5f171fc9"></a>
   </p>
-  <br>
   <br>
   <br>
   <br>
