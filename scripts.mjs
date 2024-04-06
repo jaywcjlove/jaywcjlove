@@ -99,8 +99,10 @@ function compare(a, b) {
     [], // 4
     '**Rehype Plugins** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
     [], // 6
-    '**Other Project** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
+    '**SwiftUI Plugins** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
     [], // 8
+    '**Other Project** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
+    [], // 10
   ];
   baseData.forEach((item) => {
     if (item.category === 'handbook') {
@@ -109,8 +111,10 @@ function compare(a, b) {
       markdownTable[4].push(getProjectLineString(item));
     } else if (item.category === 'rehype') {
       markdownTable[6].push(getProjectLineString(item));
-    } else {
+    } else if (item.category === 'swift') {
       markdownTable[8].push(getProjectLineString(item));
+    } else {
+      markdownTable[10].push(getProjectLineString(item));
     }
   });
 

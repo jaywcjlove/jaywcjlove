@@ -274,7 +274,8 @@
     "npm_name": "websocketjs"
   },
   "jaywcjlove/swiftui-markdown": {
-    "version": true
+    "version": true,
+    "category": "swift"
   },
   "jaywcjlove/stylus-px2rem": {
     "npm": true,
@@ -514,7 +515,14 @@
   },
   "jaywcjlove/DevHub": {},
   "jaywcjlove/IconizeFolder": {},
-  "jaywcjlove/swiftui-searchfield": {},
+  "jaywcjlove/swiftui-searchfield": {
+    "version": true,
+    "category": "swift"
+  },
+  "jaywcjlove/swiftui-texteditor": {
+    "version": true,
+    "category": "swift"
+  },
   "jaywcjlove/TextSoundSaver": {},
   "jaywcjlove/zh-hans.react.dev-for-docker": {},
   "jaywcjlove/remark-github-blockquote-alert": {
@@ -527,6 +535,5 @@
   "jaywcjlove/create-custom-symbols": {},
   "jaywcjlove/palette-genius": {},
   "jaywcjlove/regex-mate": {},
-  "jaywcjlove/swiftui-texteditor": {},
   "jaywcjlove/symbol-scribe": {}
 }
