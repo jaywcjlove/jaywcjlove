@@ -26,7 +26,7 @@
   <br>
   <br>
   
-  ✦ My macOS application ✦
+  ✦ My macOS/iOS application ✦
   
   <p style="display: inline_block">
     <a target="_blank" href="https://wangchujiang.com/copybook-generator/" title="Copybook Generator for macOS/iOS"><img align="center" alt="Copybook Generator" height="50" width="50" src="https://github.com/jaywcjlove/jaywcjlove/assets/1680273/b90e42ff-158b-4534-82ca-5898fd0e8d73"></a>
