@@ -513,8 +513,12 @@
     "version": true,
     "npm_name": "@wcj/ejs-cli"
   },
-  "jaywcjlove/DevHub": {},
-  "jaywcjlove/IconizeFolder": {},
+  "jaywcjlove/DevHub": {
+    "category": "macos"
+  },
+  "jaywcjlove/IconizeFolder": {
+    "category": "macos"
+  },
   "jaywcjlove/swiftui-searchfield": {
     "version": true,
     "category": "swift"
@@ -523,20 +527,40 @@
     "version": true,
     "category": "swift"
   },
-  "jaywcjlove/TextSoundSaver": {},
+  "jaywcjlove/TextSoundSaver": {
+    "category": "macos"
+  },
   "jaywcjlove/zh-hans.react.dev-for-docker": {},
   "jaywcjlove/remark-github-blockquote-alert": {
     "npm": true,
     "version": true,
     "category": "rehype"
   },
-  "jaywcjlove/ResumeRevise": {},
-  "jaywcjlove/time-passage": {},
-  "jaywcjlove/create-custom-symbols": {},
-  "jaywcjlove/palette-genius": {},
-  "jaywcjlove/regex-mate": {},
-  "jaywcjlove/symbol-scribe": {},
-  "jaywcjlove/swiftui-tutorial": {},
-  "jaywcjlove/copybook-generator": {},
-  "jaywcjlove/devtutor": {}
+  "jaywcjlove/ResumeRevise": {
+    "category": "macos"
+  },
+  "jaywcjlove/time-passage": {
+    "category": "macos"
+  },
+  "jaywcjlove/create-custom-symbols": {
+    "category": "macos"
+  },
+  "jaywcjlove/palette-genius": {
+    "category": "macos"
+  },
+  "jaywcjlove/regex-mate": {
+    "category": "macos"
+  },
+  "jaywcjlove/symbol-scribe": {
+    "category": "macos"
+  },
+  "jaywcjlove/swiftui-tutorial": {
+    "category": "macos"
+  },
+  "jaywcjlove/copybook-generator": {
+    "category": "macos"
+  },
+  "jaywcjlove/devtutor": {
+    "category": "macos"
+  }
 }

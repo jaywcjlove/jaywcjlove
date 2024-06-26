@@ -101,8 +101,10 @@ function compare(a, b) {
     [], // 6
     '**SwiftUI Plugins** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
     [], // 8
-    '**Other Project** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
+    '**macOS App** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
     [], // 10
+    '**Other Project** | **Homepage** | **Stars** | **Last Commit** | **Downloads** | **Version** ',
+    [], // 12
   ];
   baseData.forEach((item) => {
     if (item.category === 'handbook') {
@@ -113,8 +115,10 @@ function compare(a, b) {
       markdownTable[6].push(getProjectLineString(item));
     } else if (item.category === 'swift') {
       markdownTable[8].push(getProjectLineString(item));
-    } else {
+    } else if (item.category === 'macos') {
       markdownTable[10].push(getProjectLineString(item));
+    } else {
+      markdownTable[12].push(getProjectLineString(item));
     }
   });
 
