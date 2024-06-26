@@ -475,9 +475,6 @@
     "npm": true,
     "version": true
   },
-  "jaywcjlove/hello-world-npm": {
-    "version": true
-  },
   "jaywcjlove/map-manager-report-location": {
     "version": true
   },
@@ -486,23 +483,6 @@
     "version": true,
     "npm_name": "@wcj/markdown-style"
   },
-  "jaywcjlove/animate.styl": {},
-  "jaywcjlove/appstore": {},
-  "jaywcjlove/ejs2-loader": {},
-  "jaywcjlove/FrontEndBlogCN": {},
-  "jaywcjlove/grunt-dist": {},
-  "jaywcjlove/gulp-sourcemap": {},
-  "jaywcjlove/hexoThemeKacper": {},
-  "jaywcjlove/IE6PNG": {},
-  "jaywcjlove/my-repos": {},
-  "jaywcjlove/nxylene": {},
-  "jaywcjlove/online-Tv": {},
-  "jaywcjlove/Proxy": {},
-  "jaywcjlove/react-native-macos-amac": {},
-  "jaywcjlove/shouyinji": {},
-  "jaywcjlove/spec": {},
-  "jaywcjlove/vue-koa-demo": {},
-  "jaywcjlove/webpack-multipage-demo": {},
   "jaywcjlove/chinese-numerals": {
     "npm": true,
     "version": true,

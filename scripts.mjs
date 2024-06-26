@@ -56,8 +56,11 @@ function compare(a, b) {
     console.log(`\x1b[35;1m Page 2 data:\x1b[0m \x1b[32;1m${result2.data.length}\x1b[0m`);
   }
   reposData.flat().forEach(({ full_name, ...rest }) => {
-    if (!repoData[full_name]) {
+    if (!repoData[full_name] && rest.archived === false) {
       repoData[full_name] = {};
+    }
+    if (rest.archived === true) {
+      console.log(`\x1b[35;1m Archived:\x1b[0m https://github.com/\x1b[32;1m${full_name}\x1b[0m`);
     }
   });
 
