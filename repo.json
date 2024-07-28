@@ -544,5 +544,11 @@
     "category": "macos"
   },
   "jaywcjlove/free-font": {},
-  "jaywcjlove/programming-language-timeline": {}
+  "jaywcjlove/programming-language-timeline": {},
+  "jaywcjlove/pinyin-font": {},
+  "jaywcjlove/github-action-folder-tree": {
+    "version": true,
+    "category": "action"
+  },
+  "jaywcjlove/sgo-rs": {}
 }
