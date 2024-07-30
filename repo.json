@@ -550,5 +550,9 @@
     "version": true,
     "category": "action"
   },
-  "jaywcjlove/sgo-rs": {}
+  "jaywcjlove/sgo-rs": {},
+  "jaywcjlove/github-action-upload-assets": {
+    "version": true,
+    "category": "action"
+  }
 }
