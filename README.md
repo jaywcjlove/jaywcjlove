@@ -242,7 +242,7 @@
 
 <br />
 <a href="https://wangchujiang.com/#/app">
-  <table>
+  <table align="right">
       <tr>
           <td>
             👉 &nbsp;&nbsp;My macOS/iOS application
