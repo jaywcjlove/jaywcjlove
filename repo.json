@@ -554,5 +554,11 @@
   "jaywcjlove/github-action-upload-assets": {
     "version": true,
     "category": "action"
+  },
+  "jaywcjlove/releases": {
+    "version": true
+  },
+  "jaywcjlove/web-serve": {
+    "category": "macos"
   }
 }
