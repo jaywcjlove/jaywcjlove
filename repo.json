@@ -560,5 +560,14 @@
   },
   "jaywcjlove/web-serve": {
     "category": "macos"
+  },
+  "jaywcjlove/app-rejection-fixes": {
+    "category": "handbook"
+  },
+  "jaywcjlove/quick-rss": {
+    "category": "macos"
+  },
+  "jaywcjlove/xcode-tips": {
+    "category": "handbook"
   }
 }
