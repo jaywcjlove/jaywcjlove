@@ -20,7 +20,7 @@
   <p>
     <a href="http://weibo.com/pc175">Weibo</a> • 
     <a href="https://twitter.com/jaywcjlove">Twitter</a> • 
-    <a href="mailto:wowohoo@qq.com">E-Mail</a> • 
+    <a href="mailto:kennyiseeyou@gmail.com">E-Mail</a> • 
     <a href="https://jaywcjlove.github.io/#/sponsor">Sponsor</a>
   </p>
   <br>
