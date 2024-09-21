@@ -21,7 +21,8 @@
     <a href="http://weibo.com/pc175">Weibo</a> • 
     <a href="https://twitter.com/jaywcjlove">Twitter</a> • 
     <a href="mailto:kennyiseeyou@gmail.com">E-Mail</a> • 
-    <a href="https://jaywcjlove.github.io/#/sponsor">Sponsor</a>
+    <a href="https://jaywcjlove.github.io/#/sponsor">Sponsor</a> • 
+    <a href="https://wangchujiang.com/quick-rss/feeds/">Feeds</a>
   </p>
   <br>
   <br>
