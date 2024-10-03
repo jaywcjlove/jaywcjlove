@@ -233,7 +233,7 @@
 [**WXMP**](https://jaywcjlove.github.io/wxmp) • 
 [**CodeImage**](https://jaywcjlove.github.io/code-image) • 
 [**Quick Reference**](https://jaywcjlove.github.io/reference) • 
-[**Free Font**](https://free-font.vercel.app) • 
+[**Free Font**](https://wangchujiang.com/free-font/) • 
 [json-viewer](https://uiwjs.github.io/json-viewer/) • 
 [npm-unpkg](https://uiwjs.github.io/npm-unpkg/) • 
 [run-web](https://uiwjs.github.io/react-run-web/) • 
