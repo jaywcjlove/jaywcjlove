@@ -569,5 +569,11 @@
   },
   "jaywcjlove/xcode-tips": {
     "category": "handbook"
+  },
+  "jaywcjlove/DeviceInfo": {
+    "category": "swift"
+  },
+  "jaywcjlove/paste-quick": {
+    "category": "macos"
   }
 }
