@@ -575,5 +575,12 @@
   },
   "jaywcjlove/paste-quick": {
     "category": "macos"
+  },
+  "jaywcjlove/awesome-swift-macos-apps": {
+    "category": "handbook"
+  },
+  "jaywcjlove/my-npm-stat": {},
+  "jaywcjlove/rightmenu-master": {
+    "category": "macos"
   }
 }
