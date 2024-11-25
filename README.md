@@ -235,23 +235,23 @@
 </details>
 
 
-<kbd>[**Web Tool**](https://jaywcjlove.github.io/tools)</kbd> • 
-<kbd>[**SVG Icon Search**](https://icongo.github.io/)</kbd> • 
-<kbd>[**WXMP**](https://jaywcjlove.github.io/wxmp)</kbd> • 
-<kbd>[**CodeImage**](https://jaywcjlove.github.io/code-image)</kbd> • 
-<kbd>[**Quick Reference**](https://jaywcjlove.github.io/reference)</kbd> • 
-<kbd>[**Free Font**](https://wangchujiang.com/free-font/)</kbd> • 
-<kbd>[json-viewer](https://uiwjs.github.io/json-viewer/)</kbd> • 
-<kbd>[npm-unpkg](https://uiwjs.github.io/npm-unpkg/)</kbd> • 
-<kbd>[run-web](https://uiwjs.github.io/react-run-web/)</kbd> • 
-<kbd>[keycode-info](https://uiwjs.github.io/keycode-info/)</kbd> • 
-<kbd>[ui-color](https://uiwjs.github.io/ui-color/)</kbd> • 
-<kbd>[nginx-editor](https://jaywcjlove.github.io/nginx-editor/)</kbd> • 
-<kbd>[linux-command](https://jaywcjlove.github.io/linux-command/)</kbd> • 
-<kbd>[github-rank](https://jaywcjlove.github.io/github-rank/)</kbd> • 
-<kbd>[dev-site](https://jaywcjlove.github.io/dev-site/)</kbd> • 
-<kbd>[logo](https://jaywcjlove.github.io/logo/)</kbd> • 
-<kbd>[regexp-example](https://jaywcjlove.github.io/regexp-example)</kbd> • 
+<kbd>[**Web Tool**](https://jaywcjlove.github.io/tools)</kbd> 
+<kbd>[**SVG Icon Search**](https://icongo.github.io/)</kbd> 
+<kbd>[**WXMP**](https://jaywcjlove.github.io/wxmp)</kbd> 
+<kbd>[**CodeImage**](https://jaywcjlove.github.io/code-image)</kbd> 
+<kbd>[**Quick Reference**](https://jaywcjlove.github.io/reference)</kbd> 
+<kbd>[**Free Font**](https://wangchujiang.com/free-font/)</kbd> 
+<kbd>[json-viewer](https://uiwjs.github.io/json-viewer/)</kbd> 
+<kbd>[npm-unpkg](https://uiwjs.github.io/npm-unpkg/)</kbd> 
+<kbd>[run-web](https://uiwjs.github.io/react-run-web/)</kbd> 
+<kbd>[keycode-info](https://uiwjs.github.io/keycode-info/)</kbd> 
+<kbd>[ui-color](https://uiwjs.github.io/ui-color/)</kbd> 
+<kbd>[nginx-editor](https://jaywcjlove.github.io/nginx-editor/)</kbd> 
+<kbd>[linux-command](https://jaywcjlove.github.io/linux-command/)</kbd> 
+<kbd>[github-rank](https://jaywcjlove.github.io/github-rank/)</kbd> 
+<kbd>[dev-site](https://jaywcjlove.github.io/dev-site/)</kbd> 
+<kbd>[logo](https://jaywcjlove.github.io/logo/)</kbd> 
+<kbd>[regexp-example](https://jaywcjlove.github.io/regexp-example)</kbd> 
 <kbd>[URL Decoder/Encoder](https://jaywcjlove.github.io/url-encode)</kbd>
 
 
