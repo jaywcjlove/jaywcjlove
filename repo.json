@@ -585,5 +585,8 @@
   },
   "jaywcjlove/MyAppListKit": {
     "category": "swift"
+  },
+  "jaywcjlove/iconed": {
+    "category": "macos"
   }
 }
