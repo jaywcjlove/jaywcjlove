@@ -597,5 +597,12 @@
   },
   "jaywcjlove/swift-check-update": {
     "category": "swift"
+  },
+  "jaywcjlove/FFmpegKit": {},
+  "jaywcjlove/StoreKitHelper": {
+    "category": "swift"
+  },
+  "jaywcjlove/videoer": {
+    "category": "macos"
   }
 }
