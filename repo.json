@@ -604,5 +604,8 @@
   },
   "jaywcjlove/videoer": {
     "category": "macos"
+  },
+  "jaywcjlove/focus-cursor": {
+    "category": "macos"
   }
 }
