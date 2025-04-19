@@ -610,5 +610,8 @@
   },
   "jaywcjlove/file-sentinel": {
     "category": "macos"
+  },
+  "jaywcjlove/ColorSelector": {
+    "category": "swift"
   }
 }
