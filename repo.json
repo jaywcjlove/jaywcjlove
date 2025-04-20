@@ -613,5 +613,8 @@
   },
   "jaywcjlove/ColorSelector": {
     "category": "swift"
+  },
+  "jaywcjlove/Colorful": {
+    "category": "swift"
   }
 }
