@@ -616,5 +616,8 @@
   },
   "jaywcjlove/Colorful": {
     "category": "swift"
+  },
+  "jaywcjlove/audioer": {
+    "category": "macos"
   }
 }
