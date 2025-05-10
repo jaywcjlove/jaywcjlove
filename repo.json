@@ -619,5 +619,8 @@
   },
   "jaywcjlove/audioer": {
     "category": "macos"
+  },
+  "jaywcjlove/musicer": {
+    "category": "macos"
   }
 }
