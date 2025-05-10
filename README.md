@@ -57,17 +57,13 @@
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
 </div>
 
 <div>
 
 <div>
   
-<details>
+<details align="center">
 <summary>More Repositories ...</summary>
 
 
