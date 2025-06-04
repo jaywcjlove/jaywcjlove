@@ -65,7 +65,7 @@
 <div>
   
 <details>
-<summary>👓 More Repositories...</summary>
+<summary>More Repositories...</summary>
 
 
 <p>
@@ -255,7 +255,7 @@
 </details>
 
 <details>
-<summary>👓 My React component...</summary>
+<summary>My React component...</summary>
 
 
 | project | homepage | stars | repo deps | downloads | version
