@@ -11,7 +11,7 @@ function getProjectLineString(item) {
   const dt = [];
   dt[0] = item.github ? `[${item.github.replace(/^jaywcjlove\//, '')}](https://github.com/${item.github})` : '-';
   dt[1] = item.homepage ? `[\`#homepage\`](${item.homepage})` : '-';
-  dt[2] = item.github ? `[![GitHub stars](https://img.shields.io/github/stars/${item.github}?style=flat)](https://github.com/${item.github}/stargazers)` : ' ';
+  dt[2] = item.github ? `[![GitHub stars](https://badgen.net/github/stars/${item.github}?style=flat&label=)](https://github.com/${item.github}/stargazers)` : ' ';
   dt[3] = item.github ? `[![GitHub last commit](https://img.shields.io/github/last-commit/${item.github}?style=flat&label=last)](https://github.com/${item.github}/commits)` : ' ';
   dt[4] = item.npm ? `[![NPM Downloads](https://img.shields.io/npm/dm/${item.npm}.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/${item.npm})` : ' ';
 
