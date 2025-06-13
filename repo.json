@@ -625,5 +625,8 @@
   },
   "jaywcjlove/mousio": {
     "category": "macos"
+  },
+  "jaywcjlove/mousio-hint": {
+    "category": "macos"
   }
 }
