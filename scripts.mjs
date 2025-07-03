@@ -12,8 +12,8 @@ function getProjectLineString(item) {
   dt[0] = item.github ? `[${item.github.replace(/^jaywcjlove\//, '')}](https://github.com/${item.github})` : '-';
   dt[1] = item.homepage ? `[\`#homepage\`](${item.homepage})` : '-';
   dt[2] = item.github ? `[![GitHub stars](https://badgen.net/github/stars/${item.github}?style=flat&label=)](https://github.com/${item.github}/stargazers)` : ' ';
-  dt[3] = item.github ? `[![GitHub last commit](https://img.shields.io/github/last-commit/${item.github}?style=flat&label=last)](https://github.com/${item.github}/commits)` : ' ';
-  dt[4] = item.npm ? `[![NPM Downloads](https://img.shields.io/npm/dm/${item.npm}.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/${item.npm})` : ' ';
+  // dt[3] = item.github ? `[![GitHub last commit](https://img.shields.io/github/last-commit/${item.github}?style=flat&label=last)](https://github.com/${item.github}/commits)` : ' ';
+  dt[3] = item.npm ? `[![NPM Downloads](https://img.shields.io/npm/dm/${item.npm}.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/${item.npm})` : ' ';
 
   // const npmVersion = item.npm ? `[![npm version](https://img.shields.io/npm/v/${item.npm}.svg?label=&logo=npm)](https://www.npmjs.com/package/${item.npm})` : '';
   // const githubVersion = item.version ? `![GitHub package version](https://img.shields.io/github/v/tag/${item.github}?style=flat&label=&labelColor=555&logo=github)` : '';
@@ -95,18 +95,18 @@ function compare(a, b) {
   const mdstr = fs.readFileSync(mdPath);
 
   const markdownTable = [
-    '**Handbook** | **Homepage** | **Stars** | **Last Commit** | **Downloads** ',
-    ':--- | --- | :--- | :--- | :--- ',
+    '**Handbook** | **Homepage** | **Stars** | **Downloads** ',
+    ':--- | --- | :--- | :--- ',
     [], // 2
-    '**Github Actions** | **Homepage** | **Stars** | **Last Commit** | **Downloads** ',
+    '**Github Actions** | **Homepage** | **Stars** | **Downloads** ',
     [], // 4
-    '**Rehype Plugins** | **Homepage** | **Stars** | **Last Commit** | **Downloads** ',
+    '**Rehype Plugins** | **Homepage** | **Stars** | **Downloads** ',
     [], // 6
-    '**SwiftUI Plugins** | **Homepage** | **Stars** | **Last Commit** | **Downloads** ',
+    '**SwiftUI Plugins** | **Homepage** | **Stars** | **Downloads** ',
     [], // 8
-    '**macOS App** | **Homepage** | **Stars** | **Last Commit** | **Downloads** ',
+    '**macOS App** | **Homepage** | **Stars** | **Downloads** ',
     [], // 10
-    '**Other Project** | **Homepage** | **Stars** | **Last Commit** | **Downloads** ',
+    '**Other Project** | **Homepage** | **Stars** | **Downloads** ',
     [], // 12
   ];
   baseData.forEach((item) => {
