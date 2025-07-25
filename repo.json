@@ -631,5 +631,8 @@
   },
   "jaywcjlove/vidwall": {
     "category": "macos"
+  },
+  "jaywcjlove/SFSymbolsPicker": {
+    "category": "swift"
   }
 }
