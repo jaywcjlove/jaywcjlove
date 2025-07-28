@@ -5,131 +5,260 @@ import { Octokit } from 'octokit';
 import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
-const repoData = require('./repo.json');
 
+// Configuration
+const CONFIG = {
+  USERNAME: 'jaywcjlove',
+  PER_PAGE: 100,
+  MAX_PAGES: 3, // 可配置最大页数
+  REPO_JSON_PATH: './repo.json',
+  DATA_JSON_PATH: './data.json',
+  README_PATH: './README.md'
+};
+
+// Color constants for console output
+const COLORS = {
+  PURPLE: '\x1b[35;1m',
+  GREEN: '\x1b[32;1m',
+  RED: '\x1b[31;1m',
+  RESET: '\x1b[0m'
+};
+
+/**
+ * Load repository configuration data
+ */
+function loadRepoData() {
+  try {
+    return require(CONFIG.REPO_JSON_PATH);
+  } catch (error) {
+    console.warn(`${COLORS.RED}Warning: Could not load repo.json, using empty data${COLORS.RESET}`);
+    return {};
+  }
+}
+
+/**
+ * Generate markdown table row for a project
+ */
 function getProjectLineString(item) {
-  const dt = [];
-  dt[0] = item.github ? `[${item.github.replace(/^jaywcjlove\//, '')}](https://github.com/${item.github})` : '-';
-  dt[1] = item.homepage ? `[\`#homepage\`](${item.homepage})` : '-';
-  dt[2] = item.github ? `[![GitHub stars](https://badgen.net/github/stars/${item.github}?style=flat&label=)](https://github.com/${item.github}/stargazers)` : ' ';
-  // dt[3] = item.github ? `[![GitHub last commit](https://img.shields.io/github/last-commit/${item.github}?style=flat&label=last)](https://github.com/${item.github}/commits)` : ' ';
-  dt[3] = item.npm ? `[![NPM Downloads](https://img.shields.io/npm/dm/${item.npm}.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/${item.npm})` : ' ';
-
-  // const npmVersion = item.npm ? `[![npm version](https://img.shields.io/npm/v/${item.npm}.svg?label=&logo=npm)](https://www.npmjs.com/package/${item.npm})` : '';
-  // const githubVersion = item.version ? `![GitHub package version](https://img.shields.io/github/v/tag/${item.github}?style=flat&label=&labelColor=555&logo=github)` : '';
-  // dt[5] = npmVersion ? npmVersion : githubVersion;
-  if (item.stars === false) {
-    dt[2] = '  '
-  }
-  if (item.lastCommit === false) {
-    dt[3] = '  '
-  }
-  return dt.join(' | ');
-}
-
-const octokit = new Octokit({ auth: process.env.AUTH || '' });
-const reposData = [];
-
-function compare(a, b) {
-  if (a < b ) {
-    return 1;
-  }
-  if (a > b ) {
-    return -1;
-  }
-  return 0;
-}
-
-;(async () => {
-  const result = await octokit.request('GET /users/{username}/repos?per_page=100&page=1', {
-    username: 'jaywcjlove'
-  });
-  if (result.data && result.data.length) {
-    reposData.push(result.data);
-    console.log(`\x1b[35;1m Page 1 data:\x1b[0m \x1b[32;1m${result.data.length}\x1b[0m`);
-  }
-  const result2 = await octokit.request('GET /users/{username}/repos?per_page=100&page=2', {
-    username: 'jaywcjlove'
-  });
-  if (result2.data && result2.data.length) {
-    reposData.push(result2.data);
-    console.log(`\x1b[35;1m Page 2 data:\x1b[0m \x1b[32;1m${result2.data.length}\x1b[0m`);
-  }
-  reposData.flat().forEach(({ full_name, ...rest }) => {
-    if (!repoData[full_name] && rest.archived === false) {
-      repoData[full_name] = {};
-    }
-    if (rest.archived === true) {
-      console.log(`\x1b[35;1m Archived:\x1b[0m https://github.com/\x1b[32;1m${full_name}\x1b[0m`);
-    }
-  });
-
-  const repoDataPath = path.relative(process.cwd(), 'repo.json');
-  await fs.writeFileSync(repoDataPath, JSON.stringify(repoData, null, 2));
-
+  const cells = [
+    item.github ? `[${item.github.replace(/^jaywcjlove\//, '')}](https://github.com/${item.github})` : '-',
+    item.homepage ? `[\`#homepage\`](${item.homepage})` : '-',
+    item.github && item.stars !== false 
+      ? `[![GitHub stars](https://badgen.net/github/stars/${item.github}?style=flat&label=)](https://github.com/${item.github}/stargazers)` 
+      : '  ',
+    item.npm && item.lastCommit !== false
+      ? `[![NPM Downloads](https://img.shields.io/npm/dm/${item.npm}.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/${item.npm})`
+      : '  '
+  ];
   
-  const baseData = reposData.flat()
-    .map(({ name, full_name, homepage, archived, watchers_count, forks_count, stargazers_count }) => {
-      if (archived) return;
-      const result = {
-        name, github: full_name, homepage, watchers_count, forks_count, stargazers_count
+  return cells.join(' | ');
+}
+
+/**
+ * Initialize Octokit client
+ */
+function createOctokitClient() {
+  return new Octokit({ auth: process.env.AUTH || '' });
+}
+
+/**
+ * Fetch repositories for a specific page
+ */
+async function fetchReposPage(octokit, page) {
+  try {
+    const result = await octokit.request('GET /users/{username}/repos', {
+      username: CONFIG.USERNAME,
+      per_page: CONFIG.PER_PAGE,
+      page
+    });
+    
+    console.log(`${COLORS.PURPLE}Page ${page} data:${COLORS.RESET} ${COLORS.GREEN}${result.data.length}${COLORS.RESET}`);
+    return result.data;
+  } catch (error) {
+    console.error(`${COLORS.RED}Error fetching page ${page}:${COLORS.RESET}`, error.message);
+    return [];
+  }
+}
+
+/**
+ * Fetch all repositories from GitHub API
+ */
+async function fetchAllRepos(octokit) {
+  const allRepos = [];
+  const promises = [];
+  
+  // 并行获取多个页面的数据
+  for (let page = 1; page <= CONFIG.MAX_PAGES; page++) {
+    promises.push(fetchReposPage(octokit, page));
+  }
+  
+  const results = await Promise.all(promises);
+  results.forEach(repos => allRepos.push(...repos));
+  
+  return allRepos.filter(Boolean);
+}
+
+/**
+ * Comparator function for sorting by star count (descending)
+ */
+function compareByStars(a, b) {
+  return b.stargazers_count - a.stargazers_count;
+}
+
+/**
+ * Process repository data and merge with configuration
+ */
+function processRepoData(repos, repoData) {
+  const processedRepos = {};
+  
+  repos.forEach(({ full_name, archived, ...rest }) => {
+    if (!archived) {
+      if (!repoData[full_name]) {
+        processedRepos[full_name] = {};
+      } else {
+        processedRepos[full_name] = repoData[full_name];
       }
-      if (repoData[full_name]) {
-        if (repoData[full_name].npm) {
-          result.npm = repoData[full_name].npm_name || name;
+    } else {
+      console.log(`${COLORS.PURPLE}Archived:${COLORS.RESET} https://github.com/${COLORS.GREEN}${full_name}${COLORS.RESET}`);
+    }
+  });
+  
+  return { ...repoData, ...processedRepos };
+}
+
+/**
+ * Transform repository data for display
+ */
+function transformRepoData(repos, repoData) {
+  return repos
+    .filter(repo => !repo.archived)
+    .map(({ name, full_name, homepage, watchers_count, forks_count, stargazers_count }) => {
+      const result = {
+        name,
+        github: full_name,
+        homepage,
+        watchers_count,
+        forks_count,
+        stargazers_count
+      };
+      
+      const repoConfig = repoData[full_name];
+      if (repoConfig) {
+        if (repoConfig.npm) {
+          result.npm = repoConfig.npm_name || name;
         }
-        result.version = repoData[full_name].version;
-        result.category = repoData[full_name].category;
-        result.stars = repoData[full_name].stars;
-        result.lastCommit = repoData[full_name].lastCommit;
+        Object.assign(result, {
+          version: repoConfig.version,
+          category: repoConfig.category,
+          stars: repoConfig.stars,
+          lastCommit: repoConfig.lastCommit
+        });
       }
       return result;
     })
-    .filter(Boolean)
-    .sort((a, b) => compare(a.stargazers_count, b.stargazers_count));
+    .sort(compareByStars);
+}
 
-  const dataPath = path.relative(process.cwd(), 'data.json');
-  await fs.writeFileSync(dataPath, JSON.stringify(baseData, null, 2));
+/**
+ * Write data to file safely
+ */
+function writeFileSync(filePath, data) {
+  try {
+    const content = typeof data === 'string' ? data : JSON.stringify(data, null, 2);
+    fs.writeFileSync(filePath, content);
+    console.log(`${COLORS.GREEN}✓ Written:${COLORS.RESET} ${filePath}`);
+  } catch (error) {
+    console.error(`${COLORS.RED}Error writing file ${filePath}:${COLORS.RESET}`, error.message);
+    throw error;
+  }
+}
 
-  const mdPath = path.resolve(process.cwd(), 'README.md');
-  const mdstr = fs.readFileSync(mdPath);
-
-  const markdownTable = [
-    '**Handbook** | **Homepage** | **Stars** | **Downloads** ',
-    ':--- | --- | :--- | :--- ',
-    [], // 2
-    '**Github Actions** | **Homepage** | **Stars** | **Downloads** ',
-    [], // 4
-    '**Rehype Plugins** | **Homepage** | **Stars** | **Downloads** ',
-    [], // 6
-    '**SwiftUI Plugins** | **Homepage** | **Stars** | **Downloads** ',
-    [], // 8
-    '**macOS App** | **Homepage** | **Stars** | **Downloads** ',
-    [], // 10
-    '**Other Project** | **Homepage** | **Stars** | **Downloads** ',
-    [], // 12
+/**
+ * Generate markdown table structure
+ */
+function generateMarkdownTable(baseData) {
+  const categories = [
+    { key: 'handbook', name: 'Handbook' },
+    { key: 'action', name: 'Github Actions' },
+    { key: 'rehype', name: 'Rehype Plugins' },
+    { key: 'swift', name: 'SwiftUI Packages' },
+    { key: 'macos', name: 'macOS App' },
+    { key: 'other', name: 'Other Project' }
   ];
-  baseData.forEach((item) => {
-    if (item.category === 'handbook') {
-      markdownTable[2].push(getProjectLineString(item));
-    } else if (item.category === 'action') {
-      markdownTable[4].push(getProjectLineString(item));
-    } else if (item.category === 'rehype') {
-      markdownTable[6].push(getProjectLineString(item));
-    } else if (item.category === 'swift') {
-      markdownTable[8].push(getProjectLineString(item));
-    } else if (item.category === 'macos') {
-      markdownTable[10].push(getProjectLineString(item));
-    } else {
-      markdownTable[12].push(getProjectLineString(item));
+  
+  const markdownSections = [];
+  
+  categories.forEach(category => {
+    const items = baseData.filter(item => 
+      category.key === 'other' 
+        ? !item.category || !categories.slice(0, -1).some(c => c.key === item.category)
+        : item.category === category.key
+    );
+    
+    if (items.length > 0 || category.key === 'other') {
+      markdownSections.push(`**${category.name}** | **Homepage** | **Stars** | **Downloads**`);
+      markdownSections.push(':--- | --- | :--- | :---');
+      items.forEach(item => {
+        markdownSections.push(getProjectLineString(item));
+      });
+      markdownSections.push(''); // Empty line between sections
     }
   });
+  
+  return markdownSections.join('\n');
+}
 
-  let markdown = mdstr.toString().replace(/<!--repos-start--\>(.*)\s+([\s\S]*?)(\s.+)?<!--repos-end-->/, `<!--repos-start-->\n\n${markdownTable.flat().join('\n')}\n\n<!--repos-end-->`);
-  // //innerMarkdown = innerMarkdown.replace(/<!--repos-handbook-start-->(.*)\s+([\s\S]*?)(\s.+)?<!--repos-handbook-end-->/, `<!--repos-handbook-start-->\n\n${getMdTableStr(handbook)}\n\n<!--repos-handbook-end-->`)
+/**
+ * Update README.md file with new content
+ */
+function updateReadmeFile(markdownContent) {
+  try {
+    const mdPath = path.resolve(process.cwd(), CONFIG.README_PATH);
+    const mdstr = fs.readFileSync(mdPath, 'utf8');
+    
+    const updatedMarkdown = mdstr.replace(
+      /<!--repos-start-->(.*?)<!--repos-end-->/s,
+      `<!--repos-start-->\n\n${markdownContent}\n<!--repos-end-->`
+    );
+    
+    writeFileSync(mdPath, updatedMarkdown);
+  } catch (error) {
+    console.error(`${COLORS.RED}Error updating README file:${COLORS.RESET}`, error.message);
+    throw error;
+  }
+}
 
-  console.log(`\x1b[35;1m baseData data:\x1b[0m \x1b[32;1m${baseData.length}\x1b[0m`);
-  fs.writeFileSync(mdPath, markdown);
+;(async () => {
+  try {
+    console.log(`${COLORS.PURPLE}Starting repository data collection...${COLORS.RESET}`);
+    
+    // Initialize
+    const octokit = createOctokitClient();
+    const repoData = loadRepoData();
+    
+    // Fetch all repositories
+    const allRepos = await fetchAllRepos(octokit);
+    console.log(`${COLORS.PURPLE}Total repositories fetched:${COLORS.RESET} ${COLORS.GREEN}${allRepos.length}${COLORS.RESET}`);
+    
+    // Process and save repository configuration
+    const updatedRepoData = processRepoData(allRepos, repoData);
+    writeFileSync(CONFIG.REPO_JSON_PATH, updatedRepoData);
+    
+    // Transform data for display
+    const baseData = transformRepoData(allRepos, updatedRepoData);
+    writeFileSync(CONFIG.DATA_JSON_PATH, baseData);
+    
+    // Generate markdown table
+    const markdownContent = generateMarkdownTable(baseData);
+    updateReadmeFile(markdownContent);
+    
+    console.log(`${COLORS.GREEN}✓ Process completed successfully!${COLORS.RESET}`);
+    console.log(`${COLORS.PURPLE}Total processed repositories:${COLORS.RESET} ${COLORS.GREEN}${baseData.length}${COLORS.RESET}`);
+    
+  } catch (error) {
+    console.error(`${COLORS.RED}Script execution failed:${COLORS.RESET}`, error.message);
+    process.exit(1);
+  }
 
 })();
 
