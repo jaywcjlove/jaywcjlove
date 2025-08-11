@@ -132,7 +132,7 @@ function processRepoData(repos, repoData) {
 function transformRepoData(repos, repoData) {
   return repos
     .filter(repo => !repo.archived)
-    .map(({ name, full_name, homepage, watchers_count, forks_count, stargazers_count }) => {
+    .map(({ name, full_name, homepage, watchers_count, forks_count, stargazers_count, description }) => {
       const result = {
         name,
         github: full_name,
