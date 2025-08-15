@@ -637,5 +637,8 @@
   },
   "jaywcjlove/swiftui-codemirror": {
     "category": "swift"
+  },
+  "jaywcjlove/FileType": {
+    "category": "swift"
   }
 }
