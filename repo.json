@@ -640,5 +640,11 @@
   },
   "jaywcjlove/FileType": {
     "category": "swift"
+  },
+  "jaywcjlove/HTMLMinifier": {
+    "category": "swift"
+  },
+  "jaywcjlove/OUIData": {
+    "category": "swift"
   }
 }
