@@ -646,5 +646,8 @@
   },
   "jaywcjlove/OUIData": {
     "category": "swift"
+  },
+  "jaywcjlove/Prettier": {
+    "category": "swift"
   }
 }

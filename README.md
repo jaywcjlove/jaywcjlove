@@ -142,6 +142,7 @@
 [DeviceInfo](https://github.com/jaywcjlove/DeviceInfo) | - | [![GitHub stars](https://badgen.net/github/stars/jaywcjlove/DeviceInfo?style=flat&label=)](https://github.com/jaywcjlove/DeviceInfo/stargazers) |   
 [HTMLMinifier](https://github.com/jaywcjlove/HTMLMinifier) | - | [![GitHub stars](https://badgen.net/github/stars/jaywcjlove/HTMLMinifier?style=flat&label=)](https://github.com/jaywcjlove/HTMLMinifier/stargazers) |   
 [OUIData](https://github.com/jaywcjlove/OUIData) | - | [![GitHub stars](https://badgen.net/github/stars/jaywcjlove/OUIData?style=flat&label=)](https://github.com/jaywcjlove/OUIData/stargazers) |   
+[Prettier](https://github.com/jaywcjlove/Prettier) | - | [![GitHub stars](https://badgen.net/github/stars/jaywcjlove/Prettier?style=flat&label=)](https://github.com/jaywcjlove/Prettier/stargazers) |   
 
 **macOS App** | **Homepage** | **Stars** | **Downloads**
 :--- | --- | :--- | :---
