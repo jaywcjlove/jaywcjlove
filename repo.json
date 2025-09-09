@@ -650,5 +650,8 @@
   "jaywcjlove/Prettier": {
     "category": "swift"
   },
-  "jaywcjlove/filesamples": {}
+  "jaywcjlove/filesamples": {},
+  "jaywcjlove/HTMLToMarkdown": {
+    "category": "swift"
+  }
 }
