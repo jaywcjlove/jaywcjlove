@@ -653,5 +653,8 @@
   "jaywcjlove/filesamples": {},
   "jaywcjlove/HTMLToMarkdown": {
     "category": "swift"
+  },
+  "jaywcjlove/vidcrop": {
+    "category": "macos"
   }
 }
