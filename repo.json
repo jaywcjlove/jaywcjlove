@@ -656,5 +656,10 @@
   },
   "jaywcjlove/vidcrop": {
     "category": "macos"
+  },
+  "jaywcjlove/SystemSettings-URLs-macOS": {},
+  "jaywcjlove/video-wallpapers": {},
+  "jaywcjlove/vidwall-hub": {
+    "category": "macos"
   }
 }
