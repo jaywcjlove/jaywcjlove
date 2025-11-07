@@ -661,5 +661,9 @@
   "jaywcjlove/video-wallpapers": {},
   "jaywcjlove/vidwall-hub": {
     "category": "macos"
+  },
+  "jaywcjlove/bookmarks": {},
+  "jaywcjlove/keyzer": {
+    "category": "macos"
   }
 }
