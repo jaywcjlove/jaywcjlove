@@ -44,7 +44,7 @@ function getProjectLineString(item) {
     item.github ? `[${item.github.replace(/^jaywcjlove\//, '')}](https://github.com/${item.github})` : '-',
     item.homepage ? `[\`#homepage\`](${item.homepage})` : '-',
     item.github && item.stars !== false 
-      ? `[![GitHub stars](https://badgen.net/github/stars/${item.github}?style=flat&label=)](https://github.com/${item.github}/stargazers)` 
+      ? `[![GitHub stars](https://img.shields.io/github/stars/${item.github}?style=flat&label=)](https://github.com/${item.github}/stargazers)` 
       : '  ',
     item.npm && item.lastCommit !== false
       ? `[![NPM Downloads](https://img.shields.io/npm/dm/${item.npm}.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/${item.npm})`
