@@ -665,5 +665,12 @@
   "jaywcjlove/bookmarks": {},
   "jaywcjlove/keyzer": {
     "category": "macos"
+  },
+  "jaywcjlove/chrome-proxy-tunnel": {},
+  "jaywcjlove/deskmark": {
+    "category": "macos"
+  },
+  "jaywcjlove/swift-path-to": {
+    "category": "swift"
   }
 }
