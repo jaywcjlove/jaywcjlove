@@ -672,5 +672,8 @@
   },
   "jaywcjlove/swift-path-to": {
     "category": "swift"
+  },
+  "jaywcjlove/swift-opml": {
+    "category": "swift"
   }
 }
