@@ -675,5 +675,8 @@
   },
   "jaywcjlove/swift-opml": {
     "category": "swift"
+  },
+  "jaywcjlove/screen-test": {
+    "category": "macos"
   }
 }
