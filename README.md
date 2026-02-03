@@ -77,6 +77,9 @@
     <a target="_blank" href="https://tuple.app/awesome-mac">
       <img align="center" alt="tuple" height="92" src="https://wangchujiang.com/sponsor/tuple.app.png">
     </a>
+    <a target="_blank" href="https://pawakalabs.com/products/fakey/">
+      <img align="center" alt="tuple" height="92" src="https://wangchujiang.com/sponsor/fakey.png">
+    </a>
   </p>
   <br>
   <br>
