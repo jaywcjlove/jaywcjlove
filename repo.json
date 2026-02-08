@@ -678,5 +678,8 @@
   },
   "jaywcjlove/screen-test": {
     "category": "macos"
+  },
+  "jaywcjlove/Toast": {
+    "category": "swift"
   }
 }
