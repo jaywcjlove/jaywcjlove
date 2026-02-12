@@ -681,5 +681,8 @@
   },
   "jaywcjlove/Toast": {
     "category": "swift"
+  },
+  "jaywcjlove/scap": {
+    "category": "macos"
   }
 }

@@ -29,6 +29,7 @@
   
   <br>
   <p style="display: inline-block">
+    <a target="_blank" href="https://apps.apple.com/app/6758053530" title="Scap: Screenshot & Markup Edit for macOS"><img alt="Scap: Screenshot & Markup Edit" height="52" width="52" src="https://wangchujiang.com/appicon/scap.png"></a>
     <a target="_blank" href="https://apps.apple.com/app/6757317079" title="Screen Test for macOS"><img alt="Screen Test" height="52" width="52" src="https://wangchujiang.com/appicon/screen-test.png"></a>
     <a target="_blank" href="https://apps.apple.com/app/Deskmark/6755948110" title="Deskmark for macOS"><img alt="Deskmark" height="52" width="52" src="https://wangchujiang.com/appicon/deskmark.png"></a>
     <a target="_blank" href="https://apps.apple.com/app/Keyzer/6500434773" title="Keyzer for macOS"><img alt="Keyzer" height="52" width="52" src="https://wangchujiang.com/appicon/keyzer.png"></a>
@@ -164,6 +165,7 @@
 [HTMLMinifier](https://github.com/jaywcjlove/HTMLMinifier) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/HTMLMinifier?style=flat&label=)](https://github.com/jaywcjlove/HTMLMinifier/stargazers) |   
 [DeviceInfo](https://github.com/jaywcjlove/DeviceInfo) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/DeviceInfo?style=flat&label=)](https://github.com/jaywcjlove/DeviceInfo/stargazers) |   
 [OUIData](https://github.com/jaywcjlove/OUIData) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/OUIData?style=flat&label=)](https://github.com/jaywcjlove/OUIData/stargazers) |   
+[Toast](https://github.com/jaywcjlove/Toast) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/Toast?style=flat&label=)](https://github.com/jaywcjlove/Toast/stargazers) |   
 [swift-path-to](https://github.com/jaywcjlove/swift-path-to) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/swift-path-to?style=flat&label=)](https://github.com/jaywcjlove/swift-path-to/stargazers) |   
 
 **macOS App** | **Homepage** | **Stars** | **Downloads**
@@ -199,6 +201,7 @@
 [symbol-scribe](https://github.com/jaywcjlove/symbol-scribe) | [`#homepage`](https://wangchujiang.com/symbol-scribe/) | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/symbol-scribe?style=flat&label=)](https://github.com/jaywcjlove/symbol-scribe/stargazers) |   
 [screen-test](https://github.com/jaywcjlove/screen-test) | [`#homepage`](https://wangchujiang.com/screen-test/) | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/screen-test?style=flat&label=)](https://github.com/jaywcjlove/screen-test/stargazers) |   
 [keyzer](https://github.com/jaywcjlove/keyzer) | [`#homepage`](https://wangchujiang.com/keyzer/) | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/keyzer?style=flat&label=)](https://github.com/jaywcjlove/keyzer/stargazers) |   
+[scap](https://github.com/jaywcjlove/scap) | [`#homepage`](https://wangchujiang.com/scap/) | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/scap?style=flat&label=)](https://github.com/jaywcjlove/scap/stargazers) |   
 
 **Other Project** | **Homepage** | **Stars** | **Downloads**
 :--- | --- | :--- | :---
@@ -292,7 +295,6 @@
 [doc-static](https://github.com/jaywcjlove/doc-static) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/doc-static?style=flat&label=)](https://github.com/jaywcjlove/doc-static/stargazers) |   
 [FFmpegKit](https://github.com/jaywcjlove/FFmpegKit) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/FFmpegKit?style=flat&label=)](https://github.com/jaywcjlove/FFmpegKit/stargazers) |   
 [pml](https://github.com/jaywcjlove/pml) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/pml?style=flat&label=)](https://github.com/jaywcjlove/pml/stargazers) |   
-[Toast](https://github.com/jaywcjlove/Toast) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/Toast?style=flat&label=)](https://github.com/jaywcjlove/Toast/stargazers) |   
 [url-encode](https://github.com/jaywcjlove/url-encode) | [`#homepage`](https://jaywcjlove.github.io/url-encode) | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/url-encode?style=flat&label=)](https://github.com/jaywcjlove/url-encode/stargazers) |   
 [whereis](https://github.com/jaywcjlove/whereis) | [`#homepage`](https://jaywcjlove.github.io/whereis) | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/whereis?style=flat&label=)](https://github.com/jaywcjlove/whereis/stargazers) | [![NPM Downloads](https://img.shields.io/npm/dm/@wcjiang/whereis.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/@wcjiang/whereis)
 [auto-gitee-mirror](https://github.com/jaywcjlove/auto-gitee-mirror) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/auto-gitee-mirror?style=flat&label=)](https://github.com/jaywcjlove/auto-gitee-mirror/stargazers) |   
