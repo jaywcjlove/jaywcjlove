@@ -685,5 +685,11 @@
   },
   "jaywcjlove/scap": {
     "category": "macos"
+  },
+  "jaywcjlove/app-i18n": {
+    "category": "macos"
+  },
+  "jaywcjlove/homebrew-tap": {
+    "category": "macos"
   }
 }
