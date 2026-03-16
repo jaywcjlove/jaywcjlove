@@ -115,8 +115,7 @@
   "jaywcjlove/markdown-to-html": {
     "npm": true,
     "version": true,
-    "npm_name": "@wcj/markdown-to-html",
-    "category": "action"
+    "npm_name": "@wcj/markdown-to-html"
   },
   "jaywcjlove/generated-badges": {
     "npm": true,
@@ -691,5 +690,6 @@
   },
   "jaywcjlove/homebrew-tap": {
     "category": "macos"
-  }
+  },
+  "jaywcjlove/gitke-node": {}
 }
