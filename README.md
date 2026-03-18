@@ -81,11 +81,8 @@
     <a target="_blank" href="https://zenquery.app/?utm_source=github&utm_medium=referral&utm_campaign=awesome-mac">
       <img alt="zenquery" height="92" src="https://wangchujiang.com/sponsor/zenquery.png">
     </a>
-    <a target="_blank" href="https://tuple.app/awesome-mac">
-      <img alt="tuple" height="92" src="https://wangchujiang.com/sponsor/tuple.app.png">
-    </a>
     <a target="_blank" href="https://pawakalabs.com/products/fakey/">
-      <img alt="tuple" height="92" src="https://wangchujiang.com/sponsor/fakey.png">
+      <img alt="fakey" height="92" src="https://wangchujiang.com/sponsor/fakey.png">
     </a>
   </p>
   <br>
