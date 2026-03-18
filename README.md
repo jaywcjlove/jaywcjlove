@@ -13,7 +13,7 @@
     <a href="https://twitter.com/jaywcjlove"><img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/twitter.svg?sanitize=true" /></a>
     <a href="mailto:kennyiseeyou@gmail.com"><img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/mail.svg?sanitize=true" /></a>
   </p>
-  Hi, I'm Kenny, Fullstack developer from Shanghai, China.
+  Hi, I'm Kenny, Fullstack developer from Suzhou, China.
   <p>
     <a href="http://weibo.com/pc175">Weibo</a> • 
     <a href="https://twitter.com/jaywcjlove">Twitter</a> • 
