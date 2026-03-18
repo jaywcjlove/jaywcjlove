@@ -70,22 +70,22 @@
   <br>
   <p>
     <a href="https://screensage.pro/">
-      <img alt="ScreenSage Pro" width="400" src="https://jaywcjlove.github.io/sponsor/screensage.png">
+      <img alt="ScreenSage Pro" height="92" src="https://jaywcjlove.github.io/sponsor/screensage.png">
     </a>
     <a href="https://ip.im/">
-      <img alt="IP.IM" width="400" src="https://jaywcjlove.github.io/sponsor/ip.im.png">
+      <img alt="IP.IM" height="92" src="https://jaywcjlove.github.io/sponsor/ip.im.png">
     </a>
     <a target="_blank" href="https://warp.dev/awesome-mac">
-      <img align="center" alt="warp" height="92" src="https://wangchujiang.com/sponsor/warp-banner.png">
+      <img alt="warp" height="92" src="https://wangchujiang.com/sponsor/warp-banner.png">
     </a>
     <a target="_blank" href="https://zenquery.app/?utm_source=github&utm_medium=referral&utm_campaign=awesome-mac">
-      <img align="center" alt="zenquery" height="92" src="https://wangchujiang.com/sponsor/zenquery.png">
+      <img alt="zenquery" height="92" src="https://wangchujiang.com/sponsor/zenquery.png">
     </a>
     <a target="_blank" href="https://tuple.app/awesome-mac">
-      <img align="center" alt="tuple" height="92" src="https://wangchujiang.com/sponsor/tuple.app.png">
+      <img alt="tuple" height="92" src="https://wangchujiang.com/sponsor/tuple.app.png">
     </a>
     <a target="_blank" href="https://pawakalabs.com/products/fakey/">
-      <img align="center" alt="tuple" height="92" src="https://wangchujiang.com/sponsor/fakey.png">
+      <img alt="tuple" height="92" src="https://wangchujiang.com/sponsor/fakey.png">
     </a>
   </p>
   <br>
