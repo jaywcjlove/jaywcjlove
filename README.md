@@ -65,10 +65,13 @@
   <br>
   <br>
   
-  ✦ Special thanks to: ✦
+  ✦ Special thanks to them, always: ✦
   
   <br>
   <p>
+    <a href="https://hipixel.5km.tech/">
+      <img alt="HiPixel" height="92" src="https://jaywcjlove.github.io/sponsor/HiPixel.jpeg">
+    </a>
     <a href="https://screensage.pro/">
       <img alt="ScreenSage Pro" height="92" src="https://jaywcjlove.github.io/sponsor/screensage.png">
     </a>
