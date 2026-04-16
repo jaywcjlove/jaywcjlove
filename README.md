@@ -9,9 +9,9 @@
   </a>
   <br>
   <p>
-    <a href="http://weibo.com/pc175"><img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/weibo.svg?sanitize=true" /></a>
-    <a href="https://twitter.com/jaywcjlove"><img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/twitter.svg?sanitize=true" /></a>
-    <a href="mailto:kennyiseeyou@gmail.com"><img width="18" height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/mail.svg?sanitize=true" /></a>
+    <a href="http://weibo.com/pc175"><img height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/weibo.svg?sanitize=true" /></a>
+    <a href="https://twitter.com/jaywcjlove"><img height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/twitter.svg?sanitize=true" /></a>
+    <a href="mailto:kennyiseeyou@gmail.com"><img height="18" src="https://raw.githubusercontent.com/jaywcjlove/jaywcjlove/master/imgs/mail.svg?sanitize=true" /></a>
   </p>
   Hi, I'm Kenny, Fullstack developer from Suzhou, China.
   <p>
