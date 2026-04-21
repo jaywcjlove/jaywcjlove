@@ -698,5 +698,6 @@
   "jaywcjlove/PermissionFlow": {
     "version": true,
     "category": "swift"
-  }
+  },
+  "jaywcjlove/maslink": {}
 }

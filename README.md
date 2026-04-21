@@ -316,6 +316,7 @@
 [colors-named-hex](https://github.com/jaywcjlove/colors-named-hex) | [`#homepage`](https://jaywcjlove.github.io/colors-named-hex) | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/colors-named-hex?style=flat&label=)](https://github.com/jaywcjlove/colors-named-hex/stargazers) | [![NPM Downloads](https://img.shields.io/npm/dm/colors-named-hex.svg?label=&logo=npm&style=flat&labelColor=ffacab&color=dd4e4c)](https://www.npmjs.com/package/colors-named-hex)
 [chrome-proxy-tunnel](https://github.com/jaywcjlove/chrome-proxy-tunnel) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/chrome-proxy-tunnel?style=flat&label=)](https://github.com/jaywcjlove/chrome-proxy-tunnel/stargazers) |   
 [map-manager-report-location](https://github.com/jaywcjlove/map-manager-report-location) | - | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/map-manager-report-location?style=flat&label=)](https://github.com/jaywcjlove/map-manager-report-location/stargazers) |   
+[maslink](https://github.com/jaywcjlove/maslink) | [`#homepage`](https://jaywcjlove.github.io/maslink/?id=6737160756) | [![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/maslink?style=flat&label=)](https://github.com/jaywcjlove/maslink/stargazers) |   
 
 <!--repos-end-->
 
