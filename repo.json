@@ -691,5 +691,12 @@
   "jaywcjlove/homebrew-tap": {
     "category": "macos"
   },
-  "jaywcjlove/gitke-node": {}
+  "jaywcjlove/gitke-node": {},
+  "jaywcjlove/awesome-swift": {
+    "category": "handbook"
+  },
+  "jaywcjlove/PermissionFlow": {
+    "version": true,
+    "category": "swift"
+  }
 }
