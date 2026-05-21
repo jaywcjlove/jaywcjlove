@@ -70,6 +70,9 @@
   
   <br>
   <p>
+    <a href="https://doloffer.com">
+      <img alt="HiPixel" height="92" src="https://jaywcjlove.github.io/sponsor/doloffer.jpg">
+    </a>
     <a href="https://hipixel.5km.tech/">
       <img alt="HiPixel" height="92" src="https://jaywcjlove.github.io/sponsor/HiPixel.jpeg">
     </a>
