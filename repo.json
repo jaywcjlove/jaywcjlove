@@ -699,5 +699,12 @@
     "version": true,
     "category": "swift"
   },
-  "jaywcjlove/maslink": {}
+  "jaywcjlove/maslink": {},
+  "jaywcjlove/SwiftINI": {
+    "version": true,
+    "category": "swift"
+  },
+  "jaywcjlove/zipora": {
+    "category": "macos"
+  }
 }
