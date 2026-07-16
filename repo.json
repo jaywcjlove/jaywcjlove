@@ -706,5 +706,22 @@
   },
   "jaywcjlove/zipora": {
     "category": "macos"
+  },
+  "jaywcjlove/archive-test-files": {},
+  "jaywcjlove/ffmpeg-kit": {
+    "version": true,
+    "category": "swift"
+  },
+  "jaywcjlove/linkly": {
+    "version": true,
+    "category": "swift"
+  },
+  "jaywcjlove/spa": {
+    "version": true,
+    "category": "swift"
+  },
+  "jaywcjlove/SVGSymbolKit": {
+    "version": true,
+    "category": "swift"
   }
 }
