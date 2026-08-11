@@ -71,6 +71,9 @@
   
   <br>
   <p>
+    <a href="https://getapps.cafe/">
+      <img alt="getapps.cafe" height="92" src="https://jaywcjlove.github.io/sponsor/getapps.cafe.png">
+    </a>
     <a href="https://apps.apple.com/app/apple-store/id6757860829?pt=80185800&ct=jay&mt=8">
       <img alt="SubList" height="92" src="https://jaywcjlove.github.io/sponsor/SubList.jpg">
     </a>
