@@ -72,34 +72,34 @@
   <br>
   <p>
     <a href="https://enconvo.com">
-      <img alt="Enconvo" height="92" src="https://jaywcjlove.github.io/sponsor/enconvo.com.png">
+      <img alt="Enconvo" height="86" src="https://jaywcjlove.github.io/sponsor/enconvo.com.png">
     </a>
     <a href="https://getapps.cafe/">
-      <img alt="getapps.cafe" height="92" src="https://jaywcjlove.github.io/sponsor/getapps.cafe.png">
+      <img alt="getapps.cafe" height="86" src="https://jaywcjlove.github.io/sponsor/getapps.cafe.png">
     </a>
     <a href="https://apps.apple.com/app/apple-store/id6757860829?pt=80185800&ct=jay&mt=8">
-      <img alt="SubList" height="92" src="https://jaywcjlove.github.io/sponsor/SubList.jpg">
+      <img alt="SubList" height="86" src="https://jaywcjlove.github.io/sponsor/SubList.jpg">
     </a>
     <a href="https://doloffer.com">
-      <img alt="HiPixel" height="92" src="https://jaywcjlove.github.io/sponsor/doloffer.jpg">
+      <img alt="HiPixel" height="86" src="https://jaywcjlove.github.io/sponsor/doloffer.jpg">
     </a>
     <a href="https://hipixel.5km.tech/">
-      <img alt="HiPixel" height="92" src="https://jaywcjlove.github.io/sponsor/HiPixel.jpeg">
+      <img alt="HiPixel" height="86" src="https://jaywcjlove.github.io/sponsor/HiPixel.jpeg">
     </a>
     <a href="https://screensage.pro/">
-      <img alt="ScreenSage Pro" height="92" src="https://jaywcjlove.github.io/sponsor/screensage.png">
+      <img alt="ScreenSage Pro" height="86" src="https://jaywcjlove.github.io/sponsor/screensage.png">
     </a>
     <a href="https://ip.im/">
-      <img alt="IP.IM" height="92" src="https://jaywcjlove.github.io/sponsor/ip.im.png">
+      <img alt="IP.IM" height="86" src="https://jaywcjlove.github.io/sponsor/ip.im.png">
     </a>
     <a target="_blank" href="https://warp.dev/awesome-mac">
-      <img alt="warp" height="92" src="https://wangchujiang.com/sponsor/warp-banner.png">
+      <img alt="warp" height="86" src="https://wangchujiang.com/sponsor/warp-banner.png">
     </a>
     <a target="_blank" href="https://zenquery.app/?utm_source=github&utm_medium=referral&utm_campaign=awesome-mac">
-      <img alt="zenquery" height="92" src="https://wangchujiang.com/sponsor/zenquery.png">
+      <img alt="zenquery" height="86" src="https://wangchujiang.com/sponsor/zenquery.png">
     </a>
     <a target="_blank" href="https://pawakalabs.com/products/fakey/">
-      <img alt="fakey" height="92" src="https://wangchujiang.com/sponsor/fakey.png">
+      <img alt="fakey" height="86" src="https://wangchujiang.com/sponsor/fakey.png">
     </a>
   </p>
   <br>
