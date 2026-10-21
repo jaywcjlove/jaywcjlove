@@ -58,7 +58,25 @@ function getProjectLineString(item) {
  * Initialize Octokit client
  */
 function createOctokitClient() {
-  return new Octokit({ auth: process.env.AUTH || '' });
+  return new Octokit({
+    auth: process.env.AUTH || '',
+    throttle: {
+      onRateLimit(retryAfter, options, octokit) {
+        octokit.log.warn(
+          `GitHub API rate limit reached for ${options.method} ${options.url}; ` +
+          `retrying automatically is disabled (quota resets in ${retryAfter} seconds).`
+        );
+        return false;
+      },
+      onSecondaryRateLimit(retryAfter, options, octokit) {
+        octokit.log.warn(
+          `GitHub secondary rate limit reached for ${options.method} ${options.url}; ` +
+          `retrying automatically is disabled (retry after ${retryAfter} seconds).`
+        );
+        return false;
+      }
+    }
+  });
 }
 
 /**
@@ -76,7 +94,19 @@ async function fetchReposPage(octokit, page) {
     return result.data;
   } catch (error) {
     console.error(`${COLORS.RED}Error fetching page ${page}:${COLORS.RESET}`, error.message);
-    return [];
+    console.error('Request:', {
+      method: error.request?.method || 'GET',
+      url: error.request?.url || `/users/${CONFIG.USERNAME}/repos?page=${page}`
+    });
+    console.error('Response status:', error.status || 'unavailable');
+    console.error('Response headers:', JSON.stringify(error.response?.headers ?? {}, null, 2));
+    if (error.response?.data) {
+      console.error('Response body:', JSON.stringify(error.response.data, null, 2));
+    }
+    if (error.stack) {
+      console.error('Error stack:', error.stack);
+    }
+    throw error;
   }
 }
 
@@ -261,4 +291,3 @@ function updateReadmeFile(markdownContent) {
   }
 
 })();
-
