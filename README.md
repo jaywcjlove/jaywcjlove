@@ -19,7 +19,8 @@
     <a href="https://twitter.com/jaywcjlove">Twitter</a> • 
     <a href="mailto:kennyiseeyou@gmail.com">E-Mail</a> • 
     <a href="https://jaywcjlove.github.io/#/sponsor">Sponsor</a> • 
-    <a href="https://wangchujiang.com/quick-rss/feeds/">Feeds</a>
+    <a href="https://wangchujiang.com/quick-rss/feeds/">Feeds</a> • 
+    <a href="https://t.me/s/AwesomeMacApps">TG</a>
   </p>
   <br>
   <br>
